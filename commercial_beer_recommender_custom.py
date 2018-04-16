@@ -863,7 +863,7 @@ def display_status(selector):
 @app.callback(Output('recommended_show', 'style'),
               [Input('button', 'n_clicks')])
 def display_status(button):
-    if button > 0:
+    if button != None:
         return {'backgroundColor': 'white', 'display':'block'}
     else:
         return {'backgroundColor': 'white', 'display':'none'}
@@ -871,61 +871,95 @@ def display_status(button):
 @app.callback(Output('abv_slider', 'marks'),
               [Input('beer_style_dropdown', 'value')])
 def change_marks(style_dropdown):
-    minimum = beers.loc[beers['style']==style_dropdown, 'abv'].min()*100
-    maximum = beers.loc[beers['style']==style_dropdown, 'abv'].max()*100
-    if maximum > 25:
-        maximum = 26
-    marks={
-        0: {'label': '0',},
-        5: {'label': '5'},
-        10: {'label': '10'},
-        15: {'label': '15'},
-        20: {'label': '20'},
-        25: {'label': '25'},
-        minimum: {'label': 'min', 'style': {'color': '#e8802e', 'background-color': 'white', 'padding-left': '5', 'padding-right': '5', 'z-index':'1'}},
-        maximum: {'label': 'max', 'style': {'color': '#e8802e', 'background-color': 'white', 'padding-left': '5', 'padding-right': '5', 'z-index':'1'}}
-    }
-    return marks
+    try:
+        minimum = beers.loc[beers['style']==style_dropdown, 'abv'].min()*100
+        maximum = beers.loc[beers['style']==style_dropdown, 'abv'].max()*100
+        if maximum > 25:
+            maximum = 26
+        marks={
+            0: {'label': '0',},
+            5: {'label': '5'},
+            10: {'label': '10'},
+            15: {'label': '15'},
+            20: {'label': '20'},
+            25: {'label': '25'},
+            minimum: {'label': 'min', 'style': {'color': '#e8802e', 'background-color': 'white', 'padding-left': '5', 'padding-right': '5', 'z-index':'1'}},
+            maximum: {'label': 'max', 'style': {'color': '#e8802e', 'background-color': 'white', 'padding-left': '5', 'padding-right': '5', 'z-index':'1'}}
+        }
+        return marks
+    except:
+        marks={
+            0: {'label': '0',},
+            5: {'label': '5'},
+            10: {'label': '10'},
+            15: {'label': '15'},
+            20: {'label': '20'},
+            25: {'label': '25'}
+        }
+        return marks
 
 @app.callback(Output('ibu_slider', 'marks'),
               [Input('beer_style_dropdown', 'value')])
 def change_marks(style_dropdown):
-    minimum = beers.loc[beers['style']==style_dropdown, 'ibu'].min()
-    maximum = beers.loc[beers['style']==style_dropdown, 'ibu'].max()
-    if maximum > 300:
-        maximum = 310
-    marks={
-        0: {'label': '0',},
-        50: {'label': '50'},
-        100: {'label': '100'},
-        150: {'label': '150'},
-        200: {'label': '200'},
-        250: {'label': '250'},
-        300: {'label': '300'},
+    try:
+        minimum = beers.loc[beers['style']==style_dropdown, 'ibu'].min()
+        maximum = beers.loc[beers['style']==style_dropdown, 'ibu'].max()
+        if maximum > 300:
+            maximum = 310
+        marks={
+            0: {'label': '0',},
+            50: {'label': '50'},
+            100: {'label': '100'},
+            150: {'label': '150'},
+            200: {'label': '200'},
+            250: {'label': '250'},
+            300: {'label': '300'},
 
-        minimum: {'label': 'min', 'style': {'color': '#e8802e', 'background-color': 'white', 'padding-left': '5', 'padding-right': '5', 'z-index':'1'}},
-        maximum: {'label': 'max', 'style': {'color': '#e8802e', 'background-color': 'white', 'padding-left': '5', 'padding-right': '5', 'z-index':'1'}}
-    }
-    return marks
+            minimum: {'label': 'min', 'style': {'color': '#e8802e', 'background-color': 'white', 'padding-left': '5', 'padding-right': '5', 'z-index':'1'}},
+            maximum: {'label': 'max', 'style': {'color': '#e8802e', 'background-color': 'white', 'padding-left': '5', 'padding-right': '5', 'z-index':'1'}}
+        }
+        return marks
+    except:
+        marks={
+            0: {'label': '0',},
+            50: {'label': '50'},
+            100: {'label': '100'},
+            150: {'label': '150'},
+            200: {'label': '200'},
+            250: {'label': '250'},
+            300: {'label': '300'}
+        }
+        return marks
 
 @app.callback(Output('rating_slider', 'marks'),
               [Input('beer_style_dropdown', 'value')])
 def change_marks(style_dropdown):
-    minimum = beers.loc[beers['style']==style_dropdown, 'rating'].min()
-    maximum = beers.loc[beers['style']==style_dropdown, 'rating'].max()
-    if maximum > 5:
-        maximum = 5
-    marks={
-        0: {'label': '0',},
-        1: {'label': '1'},
-        2: {'label': '2'},
-        3: {'label': '3'},
-        4: {'label': '4'},
-        5: {'label': '5'},
-        minimum: {'label': 'min', 'style': {'color': '#e8802e', 'background-color': 'white', 'padding-left': '5', 'padding-right': '5', 'z-index':'1'}},
-        maximum: {'label': 'max', 'style': {'color': '#e8802e', 'background-color': 'white', 'padding-left': '5', 'padding-right': '5', 'z-index':'1'}}
-    }
-    return marks
+    try:
+        minimum = beers.loc[beers['style']==style_dropdown, 'rating'].min()
+        maximum = beers.loc[beers['style']==style_dropdown, 'rating'].max()
+        if maximum > 5:
+            maximum = 5
+        marks={
+            0: {'label': '0',},
+            1: {'label': '1'},
+            2: {'label': '2'},
+            3: {'label': '3'},
+            4: {'label': '4'},
+            5: {'label': '5'},
+            minimum: {'label': 'min', 'style': {'color': '#e8802e', 'background-color': 'white', 'padding-left': '5', 'padding-right': '5', 'z-index':'1'}},
+            maximum: {'label': 'max', 'style': {'color': '#e8802e', 'background-color': 'white', 'padding-left': '5', 'padding-right': '5', 'z-index':'1'}}
+        }
+        return marks
+    except:
+        marks={
+            0: {'label': '0',},
+            1: {'label': '1'},
+            2: {'label': '2'},
+            3: {'label': '3'},
+            4: {'label': '4'},
+            5: {'label': '5'}
+        }
+        return marks
 
 
 ######################### Recommended Beer #1 Details
