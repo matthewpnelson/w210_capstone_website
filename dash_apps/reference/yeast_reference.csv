@@ -1,0 +1,416 @@
+Aliases,Laboratory,Name,Type,Alcohol Tolerance,Flocculation,Attenuation,Minimum Temp F,Maximum Temp F
+A01 House,Imperial Yeast,A01 House,Ale,,High,73,62,70
+A04 Barbarian,Imperial Yeast,A04 Barbarian,Ale,,Medium,73,62,70
+A05 Four Square,Imperial Yeast,A05 Four Square,ale,,High,68,64,72
+A07 Flagship,Imperial Yeast,A07 Flagship,Ale,,Medium-low,73,60,72
+A09 Pub,Imperial Yeast,A09 Pub,Ale,,Very High,69,64,70
+A10 Darkness,Imperial Yeast,A10 Darkness,Ale,,Medium,71,62,72
+A13 Sovereign,Imperial Yeast,A13 Sovereign,Ale,,Medium-low,73,60,70
+A15 Independence,Imperial Yeast,A15 Independence,Ale,,Medium,72,62,72
+A18 Joystick,Imperial Yeast,A18 Joystick,Ale,,Medium High,73,60,70
+A20 Citrus,Imperial Yeast,A20 Citrus,Ale,,Low,74,67,80
+A24 Dry Hop,Imperial Yeast,A24 Dry Hop,Ale,,Medium,76,64,74
+A31 Tartan,Imperial Yeast,A31 Tartan,Ale,,Medium,72.5,65,70
+A38 Juice,Imperial Yeast,A38 Juice,Ale,,Medium,74,64,74
+A43 Loki,Imperial Yeast,A43 Loki,Ale,,Medium High,80,60,100
+Abbaye Ale Yeast,Danstar,,Ale,0.12,Med/High,75,63,77
+Abbey Ale Yeast,White Labs,WLP530,Ale,High,Med-High,77.5,66,72
+Abbey IV Ale Yeast,White Labs,WLP540,Ale,High,Medium,78,66,72
+Achouffe Belgian Ale yeast,GigaYeast,GY003,Ale,,Med-Low,82.5,68,77
+All The Bretts,Omega Yeast Labs,OYL-218,Brettanomyces,11% ABV,Low,85,68,85
+Alt Ale,Siebel Institute,BRY 144,Ale,n/a,Medium,78,59,68
+Altstadt Ale,GigaYeast,GY016,Ale,,Low,79,55,68
+Amalgamation - Brett Super Blend,The Yeast Bay,,Ale,n/a,Low,85,65,78
+American Ale,Wyeast,1056,Ale,0.1,Med-Low,75,60,72
+American Ale,Siebel Institute,BRY 96,Ale,n/a,Medium,78,64,72
+American Ale II,Wyeast,1272,Ale,0.1,High,74,60,72
+American Ale Yeast Blend,White Labs,WLP060,Ale,Med-High,Medium,76,68,72
+American Ale Yeast,Inland Island Yeast,INIS-007,Ale,High,Medium,71,68,74
+American Farmhouse Blend,White Labs,WLP670,Ale,Medium,Medium,78.5,68,72
+American Hefeweizen Ale Yeast,White Labs,WLP320,Ale,Medium,Low,72.5,65,69
+American Lager,Wyeast,2035,Lager,0.09,Medium,75,48,58
+American Lager,Siebel Institute,BRY 118,Lager,n/a,High,72,68,72
+American Lager Yeast,GigaYeast,GY030,Lager,,Medium,81,48,60
+American Lager Yeast,White Labs,WLP840,Lager,Medium,Medium,77.5,50,55
+American West Coast Yeast,Danstar,BRY-97,Ale,Medium,High,72,62,75
+American Wheat,Wyeast,1010,Wheat,0.1,Low,76,58,74
+American Whiskey,White Labs,WLP065,Ale,High,Medium,79,75,82
+Antwerp Ale Yeast,White Labs,WLP515,Ale,Medium,Medium,76.5,67,70
+Australian Ale Yeast,White Labs,WLP009,Ale,Medium,High,72.5,65,70
+B44 Whiteout,Imperial Yeast,B44 Whiteout,Belgian Ale,,Medium-low,72,62,72
+B45 Gnome,Imperial Yeast,B45 Gnome,Belgian Ale,,Medium-high,72,65,75
+B48 Triple Double,Imperial Yeast,B48 Triple Double,Belgian Ale,,Medium,74,65,77
+B51 Workhorse,Imperial Yeast,B51 Workhorse,Belgian Ale,,Medium,72,65,75
+B53 Fish Finder,Imperial Yeast,B53 Fish Finder,Belgian Ale,,Medium,74,65,73
+B56 Rustic,Imperial Yeast,B56 Rustic,Belgian Ale,,Medium,72,68,90
+B63 Monastic,Imperial Yeast,B63 Monastic,Belgian Ale,,Medium-low,74,68,78
+B64 Napoleon,Imperial Yeast,B64 Napoleon,Belgian Ale,,Low,77,65,78
+Baltic Lager,East Coast Yeast,ECY22,Lager,n/a,Medium,77,46,54
+Bavarian Hefe Yeast,GigaYeast,GY017,Ale,,Low,79,64,80
+Bavarian Lager,Wyeast,2206,Lager,0.09,Med-High,75,46,58
+Bavarian Lager,Mangrove Jack,M76,Lager,n/a,Medium,77.5,45,57
+Bavarian Weizen Ale,Siebel Institute,BRY 235,Ale,n/a,High,73,50,57
+Bavarian Weizen Yeast,White Labs,WLP351,Wheat,Medium,Low,75,66,70
+Bavarian Wheat,Wyeast,3056,Wheat,0.1,Medium,75,64,74
+Bavarian Wheat,Wyeast,3638,Wheat,0.1,Low,73,64,75
+Bavarian Wheat Yeast,Mangrove Jack,M20,Ale,n/a,Low,73,59,86
+Bedford British,White Labs,WLP006,Ale,Medium,High,76,65,70
+Beersel Brettanomyces Blend,The Yeast Bay,,Ale,n/a,Med/Low,78,66,72
+Belgian Abbaye,East Coast Yeast,ECY09,Ale,n/a,Medium,75,66,72
+Belgian Abbey,Mangrove Jack,M47,Ale,n/a,Med-High,75,64,77
+Belgian Abby Ale II,Wyeast,1762,Ale,0.12,Medium,75,65,75
+Belgian Ale,Wyeast,1214,Ale,0.12,Med-Low,75,68,78
+Belgian Ale A,Omega Yeast Labs,OYL-024,Ale,12% ABV,High,72,65,78
+Belgian Ale W,Omega Yeast Labs,OYL-028,Ale,11-12% ABV,Medium,74,64,78
+Belgian Ale Yeast,Mangrove Jack,M41,Ale,n/a,Medium,85,64,82
+Belgian Ale Yeast,White Labs,WLP550,Ale,Med-High,Medium,81.5,68,78
+Belgian Ardennes,Wyeast,3522,Ale,0.12,High,74,65,85
+Belgian Bastogne Ale Yeast,White Labs,WLP510,Ale,High,Medium,77,66,72
+Belgian Dark Ale,Wyeast,3822,Ale,0.12,Medium,76,65,80
+Belgian Gnome Ale,Inland Island Yeast,INIS-222,Ale,High,High,74,65,76
+Belgian Golden Ale Yeast,White Labs,WLP570,Ale,High,Low,75.5,68,75
+Belgian Lager Yeast,White Labs,WLP815,Lager,Medium,Medium,75,50,55
+Belgian Lambic Blend,Wyeast,3278,Ale,0.12,Med,75,63,75
+Belgian Mix,GigaYeast,GY007,Ale,,Low,80,66,77
+Belgian Saison,Wyeast,3724,Ale,0.12,Low,78,70,95
+Belgian Saison I Yeast,White Labs,WLP565,Ale,Medium,Medium,70,68,75
+Belgian Saison II Yeast,White Labs,WLP566,Ale,Medium,Medium,81.5,68,78
+Belgian Saison III Yeast,White Labs,WLP585,Ale,Medium,Low-Med,72,68,75
+Belgian Schelde,Wyeast,3655,Ale,0.11,Med,75,62,74
+Belgian Sour Mix,White Labs,WLP655,Ale,Med-High,Med/Low,75,80,85
+Belgian Stout,Wyeast,1581,Ale,0.12,Medium,80,65,75
+Belgian Strong Ale,Wyeast,1388,Ale,0.12,Low,76,64,80
+Belgian Strong Ale Yeast,White Labs,WLP545,Ale,High,Medium,81.5,66,72
+Belgian Style Ale Yeast Blend,White Labs,WLP575,Ale,Med-High,Medium,77,68,75
+Belgian Style Saison Blend,White Labs,WLP568,Ale,Medium,Medium,75,70,80
+Belgian Tripel,Mangrove Jack,M31,Ale,n/a,Medium,85,64,82
+Belgian Wheat,Wyeast,3942,Wheat,0.12,Medium,74,64,74
+Belgian White,East Coast Yeast,ECY11,Ale,n/a,Low,76,70,76
+Belgian Wit Ale Yeast,White Labs,WLP400,Ale,Medium,Low-Med,76,67,74
+Belgian Wit II Ale Yeast,White Labs,WLP410,Ale,Medium,Low-Med,72.5,67,74
+Belgian Wit,Mangrove Jack,M21,Ale,n/a,Med-Low,72.5,64,77
+Belgian Wit Yeast,GigaYeast,GY028,Ale,,Low,77.5,64,80
+Belgian Witbier,Wyeast,3944,Ale,0.12,Med-Low,74,62,75
+Belle Saison Yeast,Danstar,,Ale,High,Low,80,63,75
+Berliner Blend,GigaYeast,GB122,Ale,,N/A,89,70,80
+Berliner Blend,East Coast Yeast,ECY06,Ale,n/a,n/a,76,70,74
+Berliner Weisse Blend,Wyeast,3191,Ale,0.06,Low,75,68,72
+Berliner Weisse Blend,White Labs,WLP630,Ale,Medium,Medium,76.5,68,70
+Bier de Garde,Wyeast,3725,Ale,0.12,Low,76,70,95
+Bit O'Funk,Omega Yeast Labs,OYL-211,Brettanomyces,,Very Low,85,68,80
+Bohemian Lager,Wyeast,2124,Lager,0.09,Medium,75,48,58
+Bohemian Lager Yeast,Mangrove Jack,M84,Lager,n/a,High,78,50,59
+Bourbon Yeast,White Labs,WLP070,Ale,High,Medium,77,72,77
+Brett Barrel Yeast III,Inland Island Yeast,INIS-913,Ale,Medium,Medium,90,60,75
+Brett Blend #1 Anomala,East Coast Yeast,ECY04,Ale,n/a,n/a,75,70,70
+Brett Blend #9,East Coast Yeast,ECY05,Ale,n/a,n/a,75,70,70
+Brett Custersianus,East Coast Yeast,ECY19,Ale,n/a,n/a,75,60,74
+Brett Nanus,East Coast Yeast,ECY24,Ale,n/a,n/a,75,70,70
+Brettanomyces bruxellensis,Wyeast,5112,Ale,0.12,Medium,90,60,75
+Brettanomyces Bruxellensis Trois Vrai,White Labs,WLP648,Ale,Med-High,Low,85,70,85
+Brettanomyces Bruxellensis Trois,White Labs,WLP644,Ale,Med-High,Low,85,70,85
+Brettanomyces Bruxellensis,White Labs,WLP650,Ale,Med-High,Low,78,85,95
+Brettanomyces Claussenii,White Labs,WLP645,Ale,Med-High,Low,78,85,95
+Brettanomyces lambicus,Wyeast,5526,Ale,0.12,Medium,90,60,75
+Brettanomyces Lambicus,White Labs,WLP653,Ale,Med-High,Low,78,85,95
+Brewferm Blanche,-,,Ale,n/a,Low,78,64,73
+Brewferm Lager,-,,Lager,n/a,High,78,50,59
+Brewferm Top,-,,Ale,Medium,Med/High,75,64,77
+Bring on da Funk,Omega Yeast Labs,OYL-212,Brettanomyces,,Very Low,85,68,80
+British Ale #3,GigaYeast,GY041,Ale,,Med-High,81,64,77
+British Ale,Wyeast,1098,Ale,0.1,Med-High,74,64,72
+British Ale,Wyeast,1335,Ale,0.1,High,74.5,63,75
+British Ale I,Omega Yeast Labs,OYL-006,Ale,10% ABV,Medium High,70,64,72
+British Ale VIII,Omega Yeast Labs,OYL-016,Ale,9% ABV,Very High,67,64,72
+British Ale Yeast #1,GigaYeast,GY011,Ale,,High,77,64,77
+British Ale Yeast #2,GigaYeast,GY031,Ale,,High,81,64,75
+British Ale Yeast,Mangrove Jack,M07,Ale,n/a,High,78,57,72
+British Ale Yeast,White Labs,WLP005,Ale,Medium,High,70.5,65,70
+British Cask Ale,Wyeast,1026,Ale,0.1,Med/High,76,63,72
+British Mild,East Coast Yeast,ECY18,Ale,n/a,Low,68,60,68
+Brussels Brettanomyces Blend,The Yeast Bay,,Ale,n/a,Med/Low,80,66,72
+Budvar Lager,Wyeast,2000,Lager,0.09,Med-High,73,48,56
+BugCounty,East Coast Yeast,ECY20,Ale,n/a,n/a,80,60,74
+BugFarm,East Coast Yeast,ECY01,Ale,n/a,n/a,80,60,74
+Burlington Ale Yeast,White Labs,WLP095,Ale,Med-High,Medium,75.5,67,70
+Burton Ale Yeast,White Labs,WLP023,Ale,Medium,Medium,72,68,73
+Burton Union,East Coast Yeast,ECY17,Ale,n/a,Medium,74,64,69
+Burton Union Yeast,Mangrove Jack,M79,Ale,n/a,High,78,62,74
+C2C American Farmhouse,Omega Yeast Labs,OYL-217,Brettanomyces,10% ABV,Low,75,68,80
+California Ale V Yeast,White Labs,WLP051,Ale,Med-High,Med-High,72.5,66,70
+California Ale Yeast,White Labs,WLP001,Ale,High,Medium,76.5,68,73
+California Lager,Wyeast,2112,Lager,0.09,High,69,58,68
+Californian Lager,Mangrove Jack,M54,Lager,n/a,Med-High,79.5,64,68
+Canadian/Belgian Ale,Wyeast,3864,Ale,0.12,Medium,77,65,80
+Cask and Bottle Conditioning,Danstar,CBC-1,Ale,n/a,Med/Low,72,59,77
+Champagne Yeast,White Labs,WLP715,Champagne,0.17,Low,90,70,75
+Chardonnay,Bootleg Biology,BB99301A,S. boulardii,Medium,Low,70,65,75
+Cider,Wyeast,4766,Wine,0.12,Low,85,65,70
+London's Calling,Crescat Labs,CL001,Ale,0.09,Medium,76.5,64.4,71.6
+Northern Shire,Crescat Labs,CL002,Ale,0.09,Medium,75,64.4,71.6
+Bagpipes Chanter,Crescat Labs,CL003,Ale,0.1,High,77,64.4,71.6
+Black Clover,Crescat Labs,CL004,Ale,0.12,Very High,73,60.8,71.6
+Flemish Rhapsody,Crescat Labs,CL005,Ale,0.1,Low,73.5,60.8,75.2
+Saison's Season,Crescat Labs,CL006,Ale,0.11,Low/Medium,79.5,64.4,77
+Abbey's Sellection,Crescat Labs,CL007,Ale,0.12,Low/Medium,76,66.2,75.2
+Belgian Meander,Crescat Labs,CL008,Ale,0.12,Very High,74,64.4,75.2
+Trapeze Trappist,Crescat Labs,CL009,Ale,0.12,Medium,76,66.2,77
+Moravian Vale,Crescat Labs,CL010,Lagers,0.12,High,75,46.4,53.6
+Bayernfest,Crescat Labs,CL011,Lagers,0.11,High,76.5,46.4,57.2
+Witty Pretty,Crescat Labs,CL012,Ale,0.1,Very low,78,64.4,71.6
+Cologne Definition,Crescat Labs,CL013,Ale,0.11,Low/Medium,75,57.2,71.6
+American Cream,Crescat Labs,CL014,Ale,0.1,Medium,76,57.2,71.6
+Piwo Cells,Crescat Labs,CL015,Ale,0.09,Low,69.5,64.4,71.6
+USA1933,Crescat Labs,CL016,Ale,0.11,Medium,75,60.8,71.6
+Friar's Strong,Crescat Labs,CL017,Ale,0.15,High,77.5,64.4,75.2
+Kveik & Fox,Crescat Labs,CL018,Ale,0.1,High,74,68,104
+Colorado IPA Yeast,Inland Island Yeast,INIS-003,Ale,High,Medium,76,62,75
+Coopers Ale,-,,Ale,Medium,High,72,68,80
+Copenhagen Lager Yeast,White Labs,WLP850,Lager,Medium,Medium,75,50,58
+Craft Series Cider Yeast,Mangrove Jack,,Cider,n/a,High,78,64,75
+Cream Ale Yeast Blend,White Labs,WLP080,Ale,Med-High,Medium,77.5,65,70
+Cry Havoc,White Labs,WLP862,Ale,Medium,Med-Low,68,68,74
+Czech Budejovice Lager Yeast,White Labs,WLP802,Lager,Medium,Medium,77.5,50,55
+Czech Pils,Wyeast,2278,Lager,0.09,Med-High,72,50,58
+Czech Pilsner Yeast,GigaYeast,GY002,Lager,,Med-High,77,48,55
+Danish Lager,Wyeast,2042,Lager,0.09,Low,75,46,56
+Denny's Favorite 50,Wyeast,1450,Ale,0.1,Low,75,60,70
+Diamond Lager,Danstar,,Lager,Medium,High,77,50,59
+DIPA Ale,Omega Yeast Labs,OYL-052,Ale,High,Medium-low,72,65,72
+Doric Ale,-,,Ale,Medium,Medium,74,62,72
+Dry Belgian Ale,The Yeast Bay,,Ale,n/a,Med/High,92.5,68,74
+Dry English Ale Yeast,White Labs,WLP007,Ale,Med-High,Med-High,75,65,70
+Dry Mead,Wyeast,4632,Wine,0.18,Low-Med,95,55,75
+Dusseldorf Alt Yeast,White Labs,WLP036,Ale,Medium,Medium,68.5,65,72
+East Coast Ale Yeast,White Labs,WLP008,Ale,Medium,Med-Low,72.5,68,73
+East Midlands Ale Yeast,White Labs,WLP039,Ale,Medium,Med-High,77.5,66,70
+Eccentric Ale Yeast,Inland Island Yeast,INIS-006,Ale,Med-High,Medium,72,68,72
+Edinburgh Scottish Ale Yeast,White Labs,WLP028,Ale,Med-High,Medium,72.5,65,70
+Edme Ale,-,,Ale,Medium,Medium,74,62,70
+Empire Ale,Mangrove Jack,M15,Ale,n/a,Med-High,72.5,70,75
+English Ale Blend,White Labs,WLP085,Ale,Medium,Med-High,72.5,68,72
+English Ale,Siebel Institute,BRY 264,Ale,n/a,Medium,78,59,68
+English Ale V,Inland Island Yeast,INIS-315,Ale,Medium,Very High,66.5,65,68
+English Ale Yeast,White Labs,WLP002,Ale,Medium,Very High,66.5,65,68
+English Cider Yeast,White Labs,WLP775,Wine,Med-High,Medium,90,68,75
+English Dry Ale,Inland Island Yeast,INIS-318,Ale,Med-High,Med-High,75,65,70
+English Special Bitter,Wyeast,1768,Ale,0.09,High,70,64,72
+Essex Ale Yeast,White Labs,WLP022,Ale,Medium,Med-High,73.5,66,70
+European Ale,Wyeast,1338,Ale,0.1,High,69,62,72
+European Ale Yeast,White Labs,WLP011,Ale,Medium,Medium,67.5,65,70
+European Lager,Wyeast,2247,Lager,0.09,Low,75,46,56
+F08 Sour Batch Kidz,Imperial Yeast,F08 Sour Batch Kidz,Ale,,Low,80,68,76
+Farmhouse Ale,Wyeast,3726,Ale,0.12,Variable,76,70,95
+Farmhouse Brett,East Coast Yeast,ECY03,Ale,n/a,n/a,75,70,70
+Farmhouse Sour,GigaYeast,GB121,Ale,,N/A,89,68,80
+Farmhouse Sour Ale,The Yeast Bay,,Ale,n/a,Med/Low,85,70,78
+Fast Souring Lacto,GigaYeast,GB110,Ale,,N/A,40,68,98
+Flanders Golden Ale,Wyeast,3739,Ale,0.12,Med-Low,76,64,80
+Flemish Ale Blend,White Labs,WLP665,Ale,Med-High,Low/Med,83,68,80
+Flemish Ale,East Coast Yeast,ECY02,Ale,n/a,n/a,80,60,74
+Forbidden Fruit,Wyeast,3463,Ale,0.12,Low,74,63,76
+Franconian Dark Lager,The Yeast Bay,,Lager,n/a,Medium,71,46,51
+French Ale,White Labs,WLP072,Ale,Medium,Med-High,71.5,63,67
+French Saison,Wyeast,3711,Ale,0.12,Low,80,65,77
+French Saison Ale,Mangrove Jack,M29,Ale,n/a,Medium,87.5,79,90
+French Saison Ale Yeast,White Labs,WLP590,Ale,Medium,Medium,76.5,69,75
+Funk Weapon #1,Bootleg Biology,BB0022,B. bruxellensis,Medium,Low,80,65,75
+Funk Weapon #2,Bootleg Biology,BB0035C,B. bruxellensis,Medium,Low,80,65,75
+Funk Weapon #3,Bootleg Biology,BB0022,B. bruxellensis,Medium,Low,80,65,75
+Funktown Pale Ale,The Yeast Bay,,Ale,n/a,Med/Low,79,68,74
+G01 Stefon,Imperial Yeast,G01 Stefon,German Ale,,Low,73,63,73
+G02 Kaiser,Imperial Yeast,G02 Kaiser,German Ale,,Low,73,55,65
+G03 Dieter,Imperial Yeast,G03 Dieter,German Ale,,Medium,75,60,69
+German Ale,Wyeast,1007,Ale,0.11,Low,75,55,68
+German Ale II,White Labs,WLP003,Ale,Medium,Medium,76.5,65,70
+German Ale/ Kolsch Yeast,White Labs,WLP029,Ale,Medium,Medium,75,65,69
+German Bock Lager Yeast,White Labs,WLP833,Lager,Med-High,Medium,73,48,55
+German Bock,Omega Yeast Labs,OLY-111,Lagers,10% ABV,Medium,70,48,55
+German Kolsch,Siebel Institute,BRY 401,Ale,n/a,Low,72,55,59
+German Lager I,Omega Yeast Labs,OYL-106,Lagers,9% ABV,Medium-low,73,45,68
+German Lager X Yeast,White Labs,WLP835,Lager,Med-High,Medium,73,50,54
+German Lager Yeast,GigaYeast,GY045,Lager,,Med-Low,76,50,60
+German Lager Yeast,White Labs,WLP830,Lager,Medium,Medium,76.5,50,55
+German Monk Lager,Inland Island Yeast,INIS-711,Lager,Medium,Medium,73,50,54
+German Wheat,Wyeast,3333,Wheat,0.1,High,73,63,75
+Gervin Ale (by Muntons),-,GV-12,Ale,n/a,High,77,57,70
+Golden Gate Lager Yeast,GigaYeast,GY005,Lager,,Medium,81,55,70
+Golden Pear Belgian Ale Yeast,GigaYeast,GY048,Ale,,Low,84,65,80
+Hefeweizen Ale,Omega Yeast Labs,OYL-021,Ale,10% ABV,Low,73,65,75
+Hefeweizen Ale Yeast,White Labs,WLP300,Wheat,Medium,Low,74,68,72
+Hefeweizen IV Ale Yeast,White Labs,WLP380,Wheat,Medium,Low,76.5,66,70
+Hella Bock,Wyeast,2487,Ale,0.12,Medium,72,48,56
+Hessian Pils,The Yeast Bay,,Lager,n/a,Medium,73.5,43,49
+HotHead Ale,Omega Yeast Labs,OYL-057,Ale,11% ABV,Medium High,75,62,98
+HP Lager Yeast,White Labs,WLP925,Lager,Medium,Medium,77.5,62,68
+Irish Ale,Wyeast,1084,Ale,0.1,Medium,73,62,72
+Irish Ale,Omega Yeast Labs,OYL-005,Ale,12% ABV,Medium,69,62,72
+Irish Ale Yeast,White Labs,WLP004,Ale,Med-High,Med-High,71.5,65,68
+Klassic Ale Yeast,White Labs,WLP033,Ale,Medium,Medium,70,66,70
+Kolsch,Wyeast,2565,Ale,0.1,Low,75,56,70
+Kolsch Bier Yeast,GigaYeast,GY021,Ale,,Med-High,81,60,72
+Kolsch II,Wyeast,2575,Ale,0.1,Low,75,55,70
+Kolschbier,East Coast Yeast,ECY21,Ale,n/a,High,77,58,66
+L02 Fest,Imperial Yeast,L02 Fest,Lagers,,Medium High,71,46,56
+L05 Cablecar,Imperial Yeast,L05 Cablecar,Lagers,,Medium High,71,55,65
+L09 Que Bueno,Imperial Yeast,L09 Que Bueno,Lagers,,Medium,73,47,55
+L11 Gateway,Imperial Yeast,L11 Gateway,Lagers,,Medium,72,47,55
+L13 Global,Imperial Yeast,L13 Global,Lagers,,Medium-low,73,46,56
+L17 Harvest,Imperial Yeast,L17 Harvest,Lagers,,Medium,70,50,60
+L28 Urkel,Imperial Yeast,L28 Urkel,Lagers,,Medium,73,52,58
+Lactobacillus,Wyeast,5335,Ale,0.09,-,75,60,95
+Lactobacillus Blend,Omega Yeast Labs,OYL-605,Bacterial Cultures,,N/A,0,68,95
+Leeuwenhoek Saison Yeast Blend,White Labs,WLP564,Ale,High,Low,79,66,75
+Leuven Pale Ale,Wyeast,3538,Ale,0.12,High,76,65,80
+Liberty Bell Ale,Mangrove Jack,M36,Ale,n/a,Med-High,76,62,74
+Lochristi Brettanomyces Blend,The Yeast Bay,,Ale,n/a,Med/Low,80,66,72
+London Ale,Wyeast,1028,Ale,0.1,Med-Low,75,60,72
+London Ale III,Wyeast,1318,Ale,0.1,High,73,64,74
+London Ale Yeast,White Labs,WLP013,Ale,Medium,Medium,71,66,71
+London ESB Ale,Wyeast,1968,Ale,0.1,Very High,69,64,72
+London ESB Yeast,Danstar,,Ale,Med-High,Low,70,65,72
+London Fog Ale Yeast,White Labs,WLP066,Ale,Med-High,Med-Low,67.5,64,72
+Lucky No. 7,Real Brewers,,Ale,0.1,High,75,68,75
+Manchester Ale Yeast,White Labs,WLP038,Ale,Med-High,Med-High,72,65,70
+Mead,Mangrove Jack,M05,Mead,n/a,Med-High,97.5,59,86
+Melange - Sour Blend,The Yeast Bay,,Ale,n/a,Med/Low,85,68,78
+Mexican Lager Yeast,White Labs,WLP940,Lager,Medium,Medium,74,50,55
+Munich Classic Wheat Beer Yeast,Danstar,,Wheat,0.09,Low,75,63,72
+Munich Dry Wheat Yeast,Danstar,,Wheat,Medium,Medium,75,64,70
+Munich Festbier,East Coast Yeast,ECY15,Lager,n/a,Medium,75,46,54
+Munich Helles Yeast,White Labs,WLP860,Lager,Medium,Medium,70,48,52
+Munich Lager,Wyeast,2308,Lager,0.09,Medium,72,48,56
+Munich Lager II,Wyeast,2352,Lager,0.1,Medium,73,52,62
+Munton and Fison,-,,Ale,Medium,High,72,64,70
+Muntons Premium Gold,-,,Ale,n/a,High,78,57,77
+NB NeoBritannia,Wyeast,1945,Ale,0.1,Med-High,74,66,74
+Neutral Grain Yeast,White Labs,WLP078,Ale,High,Medium,81,76,85
+New World Strong Ale,Mangrove Jack,M42,Ale,n/a,High,79.5,61,72
+Newcastle Dark Ale Yeast,Mangrove Jack,M03,Ale,n/a,Medium,73,64,72
+NorCal Ale #1,GigaYeast,GY001,Ale,,Medium,78,64,77
+NorCal Ale #5,GigaYeast,GY029,Ale,,Med-High,71,67,75
+North American Lager,Wyeast,2272,Lager,0.09,High,73,52,58
+North European Lager,Siebel Institute,BRY 203,Lager,n/a,Low,78,68,72
+Northeast Ale,East Coast Yeast,ECY29,Ale,n/a,High,81,65,70
+NortheasternAbbey,The Yeast Bay,,Ale,n/a,Med/Low,79,68,73
+Northern California Ale Yeast,Inland Island Yeast,INIS-001,Ale,High,Medium,75,60,72
+Northwest Ale,Wyeast,1332,Ale,0.1,High,69,65,75
+Nottingham Ale Yeast,Danstar,,Ale,Med-High,High,77,57,70
+Octoberfest Lager Blend,Wyeast,2633,Lager,0.09,Med-Low,75,48,58
+Oktoberfest/Marzen Lager Yeast,White Labs,WLP820,Lager,Med-High,Medium,69,52,58
+Old Bavarian Lager Yeast,White Labs,WLP920,Lager,Medium-High,Medium,69.5,50,55
+Old Newark Ale,East Coast Yeast,ECY10,Ale,n/a,High,72,60,68
+Old Newark Beer,East Coast Yeast,ECY12,Ale,n/a,Medium,72,58,68
+Old Sonoma Ale,White Labs,WLP076,Ale,Medium,Medium,72,66,70
+Oud Brune,East Coast Yeast,ECY23,Ale,n/a,n/a,77,68,74
+Pacific Ale Yeast,White Labs,WLP041,Ale,Medium,High,67.5,65,68
+Pediococcus,Wyeast,5733,Ale,0.09,-,75,60,95
+Pilsen Lager,Wyeast,2007,Lager,0.09,Medium,73,48,56
+Pilsner Lager Yeast,White Labs,WLP800,Lager,Medium,Med-High,74.5,50,55
+Portland Hefe Yeast,GigaYeast,GY020,Ale,,Low,78,64,74
+Premium Bitter Ale Yeast,White Labs,WLP026,Ale,Medium,Medium,72.5,67,60
+Private Collection West Coast IPA,Wyeast,1217,Ale,10% ABV,Medium-High,75,62,74
+Rasenmaher Lager,Wyeast,2252,Lager,0.09,Low,75,48,68
+Ringwood Ale,Wyeast,1187,Ale,0.1,High,70,64,74
+Rocky Mountain Lager,Wyeast,2105,Lager,0.1,Med/High,72,48,56
+Roeselare Ale Blend,Wyeast,3763,Ale,0.11,Variable,80,65,85
+Rogue Pacman,Wyeast,1764,Ale,0.12,Med-High,75,60,72
+Chico Ale,RVA Yeast Labs,RVA 101,Ale,High,Medium,77.5,67,73
+Boston Ale,RVA Yeast Labs,RVA 102,Ale,High,Medium,72.5,65,73
+Pacman Ale,RVA Yeast Labs,RVA 103,Ale,High,Medium-High,76,62,72
+Hoptopper Ale,RVA Yeast Labs,RVA 104,Ale,High,Medium-Low,77.5,64,76
+Chiswick Ale,RVA Yeast Labs,RVA 131,Ale,Medium,Very High,68.5,65,70
+Manchester Ale,RVA Yeast Labs,RVA 132,Ale,Medium,High,72.5,65,72
+Scotch Ale,RVA Yeast Labs,RVA 141,Ale,High,Medium,72.5,65,70
+Dublin Ale,RVA Yeast Labs,RVA 151,Ale,High,Medium-High,72.5,65,70
+German Ale I,RVA Yeast Labs,RVA 161,Ale,Medium-High,Medium,73,60,68
+Trappist Ale I,RVA Yeast Labs,RVA 201,Ale,High,Medium,77.5,65,72
+Trappist Ale II,RVA Yeast Labs,RVA 202,Ale,High,Medium,77.5,65,72
+Trappist Ale III,RVA Yeast Labs,RVA 203,Ale,High,Medium,77.5,65,72
+Trappist Ale IV,RVA Yeast Labs,RVA 204,Ale,High,Medium,77.5,65,72
+Belgian 1833 Ale,RVA Yeast Labs,RVA 221,Ale,Medium,Medium,76.5,67,70
+Belgian Gnome Ale,RVA Yeast Labs,RVA 222,Ale,High,High,76.5,67,75
+Verboten Ale,RVA Yeast Labs,RVA 241,Ale,High,Low,72.5,65,75
+Golden Strong Ale,RVA Yeast Labs,RVA 251,Ale,High,Medium,76.5,68,75
+Saison I,RVA Yeast Labs,RVA 261,Ale,Medium,Medium,70,75,85
+Saison II,RVA Yeast Labs,RVA 262,Ale,Medium,Medium,78.5,67,77
+Ghost Ale,RVA Yeast Labs,RVA 263,Ale,Medium,Medium,80.5,65,80
+American Lager,RVA Yeast Labs,RVA 301,Lager,Medium,Medium,77.5,50,55
+Munchen Lager,RVA Yeast Labs,RVA 302,Lager,Medium-High,High,77.5,58,65
+Oktoberfest Lager,RVA Yeast Labs,RVA 303,Lager,Medium-High,Medium,69,52,58
+Czech Lager,RVA Yeast Labs,RVA 304,Lager,Medium,Medium,77.5,50,55
+S. arlingtonesis,Bootleg Biology,BB22204,Ale,Medium,Medium,85,60,75
+Safale - American Ale Yeast,Fermentis / Safale,US-05,Ale,0.095,Medium,81,54,77
+Safale - American Ale Yeast,Fermentis / Safale,US-56,Ale,Medium,Medium,72,59,75
+Safale - Belgian Saison Ale Yeast,Fermentis / Safale,BE-134,Ale,,Low,90,64,82
+Safale - English Ale Yeast,Fermentis / Safale,S-04,Ale,0.0975,High,75,54,77
+Safale - German Ale Yeast,Fermentis / Safale,K-97,Ale,0.104,High,81,54,77
+Safbrew - Yeast,Fermentis / Safale,Abbaye,Ale,0.11,High,82,54,77
+Safbrew - General/Belgian Yeast,Fermentis / Safale,S-33,Ale,0.115,High,70,54,77
+Safbrew - Specialty Ale Yeast,Fermentis / Safale,T-58,Ale,0.115,High,70,54,77
+Safbrew - Wheat Beer Yeast,Fermentis / Safale,WB-06,Wheat,0.105,Low,86,54,77
+Saflager - German Lager Yeast,Fermentis / Safale,S-23,Lager,0.105,High,82,48,72
+Saflager - German Lager Yeast,Fermentis / Safale,W-34/70,Lager,0.105,High,83,48,72
+Saflager - Swiss Lager Yeast,Fermentis / Safale,S-189,Lager,0.105,High,84,48,72
+Saison : Farmhouse,Inland Island Yeast,INIS-291,Ale,High,Medium,76.5,70,95
+Saison Blend,GigaYeast,GY047,Ale,,Low,81.5,64,80
+Saison Blend,The Yeast Bay,,Ale,n/a,Med/Low,79,68,80
+Saison Brasserie,East Coast Yeast,ECY08,Ale,n/a,Medium,80,75,85
+Saison Parfait,Bootleg Biology,BBX0104,Ale,Medium,Medium,90,65,85
+Saison Single,East Coast Yeast,ECY14,Ale,n/a,Medium,77,75,82
+Saison Sour,GigaYeast,GB124,Ale,,N/A,78,68,80
+Saison Yeast #1,GigaYeast,GY018,Ale,,Low,82,64,80
+Saison Yeast #2,GigaYeast,GY027,Ale,,Low,81,64,80
+Saison-Brett Blend,Wyeast,3031-PC,Ale,0.12,Low,85,65,80
+Saison/Brettanomyces Blend,The Yeast Bay,,Ale,n/a,Med/Low,80,70,78
+Saisonstein's Monster,Omega Yeast Labs,OYL-500,hybrid,High,Low,80,65,78
+San Diego Super Yeast,White Labs,WLP090,Ale,High,Med-High,79.5,65,68
+San Francisco Lager Yeast,White Labs,WLP810,Lager,Med-High,High,67.5,58,65
+Scotch Ale #1,GigaYeast,GY044,Ale,,Med-Low,81,64,75
+Scotch Whiskey,White Labs,WLP045,Ale,High,Medium,77,72,77
+Scottish Ale,Wyeast,1728,Ale,0.12,High,71,55,75
+Scottish Heavy,East Coast Yeast,ECY07,Ale,n/a,Medium,78,60,68
+Scourmont Abbey Ale Yeast,GigaYeast,GY014,Ale,,Low,80,64,80
+Sigmund's Voss Kveik,The Yeast Bay,,Ale,n/a,High,80.5,70,100
+Sour Plum Belgian,GigaYeast,GB123,Ale,,N/A,77,68,80
+Sour Solera Blend,Bootleg Biology,BBXSS,Blend,Medium,Medium,95,65,75
+Sour Weapon,Bootleg Biology,BBX0089,P. pentosaceus,Medium,n/a,0,80,100
+Southern German Lager Yeast,White Labs,WLP838,Lager,Medium,Med-High,72,50,55
+Southwold Ale Yeast,White Labs,WLP025,Ale,Medium,Medium,71.5,66,69
+Staro Prague Lager,Wyeast,2782,Lager,0.11,High,72,50,58
+Super High Gravity Ale Yeast,White Labs,WLP099,Ale,Very High,Medium,85,65,69
+Sweet Flemish Brett,GigaYeast,GB144,Ale,,N/A,83,68,75
+Sweet Mead,Wyeast,4184,Wine,0.11,Medium,75,65,75
+Sweet Mead/Wine Yeast,White Labs,WLP720,Wine,0.15,Low,75,70,75
+Tennessee Whiskey,White Labs,WLP050,Ale,High,Medium,77,75,79
+Thames Valley Ale,Wyeast,1275,Ale,0.1,Med-Low,77,62,72
+Thames Valley II,Wyeast,1882,Ale,0.1,High,75,60,70
+The Mad Fermentationist Saison Blend,Bootleg Biology,BBXMAD1,Blend,Medium,Medium,90,68,80
+The Monk,Real Brewers,,Ale,0.15,Medium,78,66,72
+The One,Real Brewers,,Ale,n/a,High,75,68,75
+Trappist Ale,Siebel Institute,BRY 204,Ale,n/a,Medium,78,64,72
+Trappist Ale,East Coast Yeast,ECY13,Ale,n/a,Medium,75,66,72
+Trappist Ale Yeast,White Labs,WLP500,Ale,High,Med-Low,77.5,65,72
+Trappist Blend,Wyeast,3789,Ale,0.12,Medium,77,68,85
+Trappist High Gravity,Wyeast,3787,Ale,0.12,Med-High,76,64,78
+Trappist Tripel Yeast,GigaYeast,GY015,Ale,,Low,75,66,74
+Tropical IPA,Omega Yeast Labs,OYL-200,Brettanomyces,High,Low,85,75,85
+UK Dark Ale Yeast,Mangrove Jack,,Ale,n/a,Medium,73,64,72
+Urquell Lager,Wyeast,2001,Lager,0.09,Med-High,74,48,58
+US West Coast Yeast,Mangrove Jack,M44,Ale,n/a,High,78,59,74
+Vermont Ale,The Yeast Bay,,Ale,n/a,Med/Low,78.5,64,72
+Vermont IPA Yeast,GigaYeast,GY054,Ale,,Med-Low,80,62,75
+W15 Suburban Brett,Imperial Yeast,W15 Suburban Brett,Ale,,Low,77.5,64,74
+Wallonian Farmhouse,The Yeast Bay,,Ale,n/a,Medium,84.5,68,78
+Weihenstephan Weizen,Wyeast,3068,Wheat,0.1,Low,75,64,75
+West Coast Ale I OYL-004,Omega Yeast Labs,OYL 004,Ale,11% ABV,Medium-low,73,60,73
+West Yorkshire,Wyeast,1469,Ale,0.09,High,69,64,72
+Where da Funk?,Omega Yeast Labs,OYL-210,Brettanomyces,,Very Low,78,68,80
+Whitbread Ale,Wyeast,1099,Ale,0.1,High,70,64,75
+Whitbread Ale Yeast,White Labs,WLP017,Ale,Medium,High,70,66,70
+Windsor Ale Yeast,Danstar,,Ale,Medium,Medium,72,64,70
+WLP672 - Lactobacillus Brevis,The Yeast Bay,,Ale,n/a,N/A,80,70,95
+Workhorse Beer Yeast,Mangrove Jack,M10,Ale,n/a,Medium,78,59,68
+Ye Olde English,Real Brewers,,Ale,n/a,Medium,70,65,70
+Yorkshire Square Ale Yeast,White Labs,WLP037,Ale,Med-High,High,70,65,69
+Zurich Lager Yeast,White Labs,WLP885,Lager,Medium,Medium,75,50,55
