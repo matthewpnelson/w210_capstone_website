@@ -8,12 +8,12 @@ import pandas as pd
 import numpy as np
 
 import os
-current_folder, current_file = os.path.split(os.path.abspath(__file__))
+# current_folder, current_file = os.path.split(os.path.abspath(__file__))
 # current_folder = os.getcwd()
 # dash_folder = current_folder+'/dash_apps'
 # os.chdir(current_folder)
 
-from dash_apps import ingredient_utils as iu
+# from dash_apps import ingredient_utils as iu
 from dash_apps import data_cleanup_viz as dcv
 import warnings
 
