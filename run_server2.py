@@ -1,5 +1,12 @@
 # from start_server import app
 import flask
+from flask import Flask, flash, redirect, render_template, request, session, abort, send_from_directory
+import os
+from sqlalchemy.orm import sessionmaker
+from database.tabledef import *
+
+
+engine = create_engine('sqlite:///database/alegorithm.db', echo=True)
 
 app = flask.Flask(__name__)
 app.secret_key = 'very secret'
@@ -8,7 +15,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config.suppress_callback_exceptions = False
 
 
-import commercial_beer_viz_breweries, commercial_beer_recommender_custom, commercial_beer_recommender_rating_filter, commercial_beer_viz_styles, recipe_viz
+import commercial_beer_viz_breweries, commercial_beer_recommender_custom, commercial_beer_recommender_rating_filter, commercial_beer_viz_styles #, recipe_viz
 
 @app.route('/')
 @app.route('/<name>')
@@ -28,6 +35,35 @@ def recipe_details(name=None):
 def infrastructure_details(name=None):
     return flask.render_template('details_infrastructure.html')
 
+@app.route('/user_login', methods=['POST'])
+def do_admin_login():
+    
+    POST_USERNAME = str(request.form['username'])
+    POST_PASSWORD = str(request.form['password'])
+	
+    Session = sessionmaker(bind=engine)
+    s = Session()
+    query = s.query(User)
+    query = s.query(User).filter(User.username.in_([POST_USERNAME]), User.password.in_([POST_PASSWORD]) )
+    result = query.first()
+    if result:
+        session['logged_in'] = True
+        session['logged_in_username'] = POST_USERNAME
+        session['logged_in_name'] = result.name
+        print 'logged in name is {}'.format(session.get('logged_in_name'))
+        return render_template('index.html', name=session['logged_in_name'])
+    else:
+        flash('wrong password!')
+        return render_template('login.html')
+    	
+
+@app.route("/logout")
+def logout():
+    session['logged_in'] = False
+    session['logged_in_as'] = None
+    session['logged_in_name'] = None
+    return home()
+	
 @app.route('/assets/<path:path>')
 def send_assets(path):
     return flask.send_from_directory('assets', path)

@@ -28,7 +28,7 @@
         <div class="container">
 
             <div class="navbar-brand">
-                <a href="#top" class="navbar-logo"><img src="assets/images/asset-9-494x128.png" alt="alegorithm.io" title="alegorithm"></a>
+                <a href="index.html#top" class="navbar-logo"><img src="assets/images/asset-9-494x128.png" alt="alegorithm.io" title="alegorithm"></a>
 
             </div>
 
@@ -36,7 +36,7 @@
                 <div class="hamburger-icon"></div>
             </button>
 
-            <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html#content5-f" aria-expanded="false">Overview</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#features1-6" aria-expanded="false" data-toggle="dropdown-submenu">Offerings</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box4-8">Beer Recommendations</a><a class="dropdown-item" href="index.html#msg-box4-b">Recipe Generator</a><a class="dropdown-item" href="index.html#msg-box4-c">Beer Explorer</a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">Methodology</a><div class="dropdown-menu"><a class="dropdown-item" href="details_recommendations.html">Recommendation System</a><a class="dropdown-item" href="details_recipes.html">Recipe Generation System</a><a class="dropdown-item" href="page4.html">Infrastructure<br></a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">About</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box3-12">The Team</a><a class="dropdown-item" href="index.html#content5-1a">UC Berkeley MIDS Program<br></a></div></li><li class="nav-item nav-btn"><a class="nav-link btn btn-warning" href="page6.html">Log In</a></li></ul>
+            <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html#content5-f" aria-expanded="false">Overview</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#features1-6" aria-expanded="false" data-toggle="dropdown-submenu">Offerings</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box4-8">Beer Recommendations</a><a class="dropdown-item" href="index.html#msg-box4-b">Recipe Generator</a><a class="dropdown-item" href="index.html#msg-box4-c">Beer Explorer</a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">Methodology</a><div class="dropdown-menu"><a class="dropdown-item" href="details_recommendations.html">Recommendation System</a><a class="dropdown-item" href="details_recipes.html">Recipe Generation System</a><a class="dropdown-item" href="details_infrastructure.html">Infrastructure<br></a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">About</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box3-12">The Team</a><a class="dropdown-item" href="index.html#content5-1a">UC Berkeley MIDS Program<br></a></div></li><li class="nav-item nav-btn"><a class="nav-link btn btn-warning" href="login.html">Log In</a></li></ul>
 
         </div>
 
@@ -69,22 +69,20 @@
             <div class="col-sm-8 col-sm-offset-2" data-form-type="formoid">
                 <h2 class="mbr-section-title display-3 text-xs-center">Log In</h2>
 
-                <div data-form-alert="true"><div hidden="" data-form-alert-success="true">Thanks for signing up!</div></div>
-                <form action="https://mobirise.com/" method="post" data-form-title="Log In">
-                    <input type="hidden" value="iFBjHJPqt/OAkCr078Q0wqk3FDtp0SAcolfSwOrVdg9bVmEXZ9FPYbKUtytbJ6Rk2oKMX9098cUHoB/NPg4QqIBdUt5JskDj/wPXr4306ZfbAWdyTsZ7ImrznxCOzuKd" data-form-email="true">
+                <!-- <div data-form-alert="true"><div hidden="" data-form-alert-success="true">Thanks for signing up!</div></div> -->
+                <!-- <form action="https://mobirise.com/" method="post" data-form-title="Log In"> -->
+				<form action="/user_login" method="post">
+                    <!-- <input type="hidden" value="iFBjHJPqt/OAkCr078Q0wqk3FDtp0SAcolfSwOrVdg9bVmEXZ9FPYbKUtytbJ6Rk2oKMX9098cUHoB/NPg4QqIBdUt5JskDj/wPXr4306ZfbAWdyTsZ7ImrznxCOzuKd" data-form-email="true"> -->
                     <div class="form-group">
-                        <input type="text" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name">
+                        <input type="text" class="form-control" name="username" required="" placeholder="Username*" data-form-field="Username">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" name="email" required="" placeholder="Username*" data-form-field="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" class="form-control" name="phone" placeholder="Password*" data-form-field="Phone">
+                        <input type="password" class="form-control" name="password" placeholder="Password*" data-form-field="Password">
                     </div>
                     <!-- <div class="form-group">
                         <textarea class="form-control" name="message" rows="7" placeholder="Message" data-form-field="Message"></textarea>
                     </div> -->
-                    <div class="text-xs-right"><button type="submit" class="btn btn-black-outline btn-black">Submit</button></div>
+                    <div class="text-xs-right"><button type="submit" class="btn btn-black-outline btn-black">Log in</button></div>
                 </form>
             </div>
         </div>
@@ -150,7 +148,7 @@
 </footer>
 
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <!-- <script src="assets/web/assets/jquery/jquery.min.js"></script> -->
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/smooth-scroll/SmoothScroll.js"></script>

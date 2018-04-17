@@ -86,13 +86,13 @@ colors = {
 t = TweetTokenizer()
 
 # Load in Pre-cleaned & Adjusted Beers Data
-beers = pd.read_json('dash_apps/beers_data.json')
+beers = pd.read_json('/root/alegorithm_data/beers_data_py2.json')
 beers['abv'] = beers['abv'] *  100
 # Load in Pretrained Label Encoder Model
-le = joblib.load('dash_apps/le_model.pkl')
+le = joblib.load('/root/alegorithm_data/le_model_py2.pkl')
 
 # Load in Pretrained KNN Model
-knn_model = joblib.load('dash_apps/knn_model.pkl')
+knn_model = joblib.load('/root/alegorithm_data/knn_model_py2.pkl')
 
 
 ############################################

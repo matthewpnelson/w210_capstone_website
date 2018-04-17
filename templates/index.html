@@ -37,7 +37,17 @@
                 <div class="hamburger-icon"></div>
             </button>
 
-            <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html#content5-f" aria-expanded="false">Overview</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#features1-6" aria-expanded="false" data-toggle="dropdown-submenu">Offerings</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box4-8">Beer Recommendations</a><a class="dropdown-item" href="index.html#msg-box4-b">Recipe Generator</a><a class="dropdown-item" href="index.html#msg-box4-c">Beer Explorer</a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">Methodology</a><div class="dropdown-menu"><a class="dropdown-item" href="details_recommendations.html">Recommendation System</a><a class="dropdown-item" href="details_recipes.html">Recipe Generation System</a><a class="dropdown-item" href="page4.html">Infrastructure<br></a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">About</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box3-12">The Team</a><a class="dropdown-item" href="index.html#content5-1a">UC Berkeley MIDS Program<br></a></div></li><li class="nav-item nav-btn"><a class="nav-link btn btn-warning" href="page6.html">Log In</a></li></ul>
+            <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar">
+				<li class="nav-item"><a class="nav-link link" href="index.html#content5-f" aria-expanded="false">Overview</a></li>
+				<li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#features1-6" aria-expanded="false" data-toggle="dropdown-submenu">Offerings</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box4-8">Beer Recommendations</a><a class="dropdown-item" href="index.html#msg-box4-b">Recipe Generator</a><a class="dropdown-item" href="index.html#msg-box4-c">Beer Explorer</a></div></li>
+				<li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">Methodology</a><div class="dropdown-menu"><a class="dropdown-item" href="details_recommendations.html">Recommendation System</a><a class="dropdown-item" href="details_recipes.html">Recipe Generation System</a><a class="dropdown-item" href="details_infrastructure.html">Infrastructure<br></a></div></li>
+				<li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">About</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box3-12">The Team</a><a class="dropdown-item" href="index.html#content5-1a">UC Berkeley MIDS Program<br></a></div></li>
+				{% if name %}
+				<li class="nav-item nav-btn"><a class="nav-link btn btn-warning" href="logout.html">Log Out</a></li>
+				{% else %}
+				<li class="nav-item nav-btn"><a class="nav-link btn btn-warning" href="login.html">Log In</a></li>
+				{% endif %}
+			</ul>
 
         </div>
 
@@ -206,7 +216,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-lg-9 mbr-table-cell-lg image-size" style="width: 35%;">
-                <div class="mbr-figure"><img src="assets/images/rec1-3.svg"></div>
+                <div class="mbr-figure"><img src="assets/images/rec1-3.png"></div>
             </div>
             <div class="col-xs-12 col-lg-3 mbr-inner-padding text-xs-center mbr-table-cell-lg">
                 <h3 class="mbr-section-title display-4">Find your Next Favorite Beer</h3>
@@ -238,7 +248,7 @@
                 <div><a class="btn btn-lg btn-black-outline btn-black" href="/explorer_styles">Beer Style</a> <a class="btn btn-lg btn-black-outline btn-black" href="/explorer_brewery">Breweries</a></div>
             </div>
             <div class="col-xs-12 col-lg-9 mbr-table-cell-lg image-size" style="width: 25%;">
-                <div class="mbr-figure"><img src="assets/images/exp1.svg"></div>
+                <div class="mbr-figure"><img src="assets/images/exp1.png"></div>
             </div>
         </div>
     </div>
@@ -249,7 +259,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-lg-9 mbr-table-cell-lg image-size" style="width: 31%;">
-                <div class="mbr-figure"><img src="assets/images/gen1.svg"></div>
+                <div class="mbr-figure"><img src="assets/images/gen1.png"></div>
             </div>
             <div class="col-xs-12 col-lg-3 mbr-inner-padding text-xs-center mbr-table-cell-lg">
                 <h3 class="mbr-section-title display-4">Beer Recipe Generator</h3>
@@ -287,27 +297,36 @@ Brewers are not currently using recipe generating software to find their next bi
     
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-md-6">
+            <div class="col-sm-6 col-md-4">
                 <div class="card cart-block">
                     <div><span class="mbri-setting mbr-iconfont mbr-iconfont-features1"></span></div>
                     <div class="card-block">
-                        <h4 class="card-title text-xs-center">Recommendation Engine Methodology</h4>
-                        <p class="card-text">Bootstrap 3 has been noted as one of the most reliable and proven frameworks and Mobiris</p>
+                        <h4 class="card-title text-xs-center">Recommendation Engine&nbsp;</h4>
+                        
                         <div class="text-xs-center"><a href="details_recommendations.html" class="btn btn-black-outline btn-black">Read More</a></div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6">
+            <div class="col-sm-6 col-md-4">
                 <div class="card cart-block">
                     <div><span class="mbri-setting3 mbr-iconfont mbr-iconfont-features1"></span></div>
                     <div class="card-block">
-                        <h4 class="card-title text-xs-center">Recipe Generation Methodology</h4>
-                        <p class="card-text">One of Bootstrap 3's big points is responsiveness and Mobirise makes effective use of this by generating highly responsive website for you.</p>
+                        <h4 class="card-title text-xs-center">Recipe Generation&nbsp;</h4>
+                        
                         <div class="text-xs-center"><a href="details_recipes.html" class="btn btn-black-outline btn-black">Read More</a></div>
                     </div>
                 </div>
             </div>
-            
+            <div class="col-sm-6 col-md-4">
+                <div class="card cart-block">
+                    <div><span class="mbri-database mbr-iconfont mbr-iconfont-features1"></span></div>
+                    <div class="card-block">
+                        <h4 class="card-title text-xs-center">Infrastructure</h4>
+                        
+                        <div class="text-xs-center"><a href="details_infrastructure.html" class="btn btn-black-outline btn-black">Read More</a></div>
+                    </div>
+                </div>
+            </div>
             
         </div>
     </div>
@@ -504,7 +523,7 @@ Brewers are not currently using recipe generating software to find their next bi
 <footer class="mbr-section mbr-section-nopadding mbr-footer" id="footer1-j" data-rv-view="91" style="background-color: rgb(38, 39, 44); padding-top: 1rem; padding-bottom: 0rem;">
     
     <div class="container">
-        <p>Copyright (c) 2018 alegorithm.io&nbsp;<a href="https://mobirise.com/">Terms of Use</a>  | <a href="https://mobirise.com/">Privacy Policy</a></p>
+        <p>Copyright (c) 2018 alegorithm.io&nbsp;<a href="https://alegorithm.io/">Terms of Use</a>  | <a href="https://alegorithm.io/">Privacy Policy</a></p>
     </div>
 </footer>
 
