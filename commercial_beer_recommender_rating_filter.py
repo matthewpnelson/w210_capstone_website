@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 
 # from dash_apps import ingredient_utils as iu
-from dash_apps import data_cleanup_viz as dcv
+# from dash_apps import data_cleanup_viz as dcv
 import warnings
 
 ## Dunno if I need this
@@ -84,7 +84,8 @@ vector_dim = 300 #matches the google model
 
 # Grab Locations for Breweries
 def add_brewery_info(beers):
-    breweries = pd.read_json('dash_apps/mehdi_brewery_data.json')
+    # breweries = pd.read_json('dash_apps/mehdi_brewery_data.json')
+    breweries = pd.DataFrame(json.load(open('dash_apps/mehdi_brewery_data_backup.json')))
     beers = breweries.transpose().merge(beers, left_index=True, right_on='brewery', how='right', suffixes=['_x',''])
     beers['brewery_x'].fillna('blank', inplace=True)
 
