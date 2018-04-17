@@ -512,7 +512,5 @@ def make_main_figure(rating_slider, ibu_slider, abv_slider, beer_style_dropdown,
     return figure
 
 
-os.chdir(current_folder)
-
 if __name__ == '__main__':
     app.run_server(port=8065)

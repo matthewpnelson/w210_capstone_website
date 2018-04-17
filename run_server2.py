@@ -11,6 +11,8 @@ app.config.suppress_callback_exceptions = False
 import commercial_beer_viz_breweries, commercial_beer_recommender_custom, commercial_beer_recommender_rating_filter, commercial_beer_viz_styles, recipe_viz
 
 @app.route('/')
+@app.route('/<name>')
+@app.route('/index.html')
 def home(name=None):
     return flask.render_template('index.html')
 
@@ -21,6 +23,10 @@ def recommendation_details(name=None):
 @app.route('/details_recipes.html')
 def recipe_details(name=None):
     return flask.render_template('details_recipes.html')
+
+@app.route('/details_infrastructure.html')
+def infrastructure_details(name=None):
+    return flask.render_template('details_infrastructure.html')
 
 @app.route('/assets/<path:path>')
 def send_assets(path):
@@ -50,7 +56,13 @@ def recommend2():
 def recipeviz():
     return recipe_viz
 
+@app.route('/signup.html')
+def signup(name=None):
+    return flask.render_template('signup.html')
 
+@app.route('/login.html')
+def login(name=None):
+    return flask.render_template('login.html')
 
 if __name__ == '__main__':
     app.secret_key = 'very secret'
