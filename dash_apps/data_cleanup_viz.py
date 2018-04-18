@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 import pandas as pd
 import numpy as np
-import matplotlib.pylab as plt
-import seaborn as sns
-from dash_apps import ingredient_utils as iu
+# import matplotlib.pylab as plt
+# import seaborn as sns
+# from dash_apps import ingredient_utils as iu
 import warnings
 
 
@@ -68,8 +69,8 @@ def create_tidy_matrix(sparse_matrix):
 
 def clean_tidy_and_export_temperature(temp_sparse_df_original):
 
-    temp_sparse_df = temp_sparse_df_original.copy(deep=True)
-
+    # temp_sparse_df = temp_sparse_df_original.copy(deep=True)
+    temp_sparse_df = temp_sparse_df_original
     # If the first temperature is 0 (ie. didn't exist at time step 0) set the default to be room temp
     if temp_sparse_df.loc['Temperature',0] == 0.0:
         temp_sparse_df.loc['Temperature',0] = 22.0
@@ -326,8 +327,11 @@ def clean_export_results(recipes_df_cleaned, index):
        'og_clean',
        'yield_clean', 'style_x', 'author']
 
-    recipe_results = recipes_df_cleaned.copy(deep=True)
-    recipe_results = recipe_results.loc[[index],result_columns].copy(deep=True)
+    # recipe_results = recipes_df_cleaned.copy(deep=True)
+    # recipe_results = recipe_results.loc[[index],result_columns].copy(deep=True)
+    # recipe_results.reset_index(inplace=True)
+
+    recipe_results = recipes_df_cleaned.loc[[index],result_columns]
     recipe_results.reset_index(inplace=True)
 
     return pd.DataFrame(recipe_results)
@@ -341,10 +345,12 @@ def clean_export_other_info(recipes_df_cleaned, index):
        'boil_gravity_clean', 'boil_size_clean', 'no_chill_clean', 'pitch_rate_clean', 'primary_temp_clean',
        'starting_mash_thickness_clean']
 
-    recipe_other_info = recipes_df_cleaned.copy(deep=True)
-    recipe_other_info = recipe_other_info.loc[[index],other_recipe_input_columns].copy(deep=True)
-    recipe_other_info.reset_index(inplace=True)
+    # recipe_other_info = recipes_df_cleaned.copy(deep=True)
+    # recipe_other_info = recipe_other_info.loc[[index],other_recipe_input_columns].copy(deep=True)
+    # recipe_other_info.reset_index(inplace=True)
 
+    recipe_other_info = recipes_df_cleaned.loc[[index],other_recipe_input_columns]
+    recipe_other_info.reset_index(inplace=True)
     return pd.DataFrame(recipe_other_info)
 
 

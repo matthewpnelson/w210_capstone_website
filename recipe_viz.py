@@ -5,6 +5,7 @@ from dash.dependencies import Input, Output, State
 import plotly.graph_objs as go
 
 import pandas as pd
+import json
 import numpy as np
 import os
 import copy
@@ -32,29 +33,29 @@ if 'DYNO' in os.environ:
 # Load in Reference lists & Cleanup
 def reference_load():
     # Grains and Fermentables
-    grain_reference = pd.read_csv('dash_apps/reference/grain_reference2.csv')
+    grain_reference = pd.read_csv('/root/alegorithm_data/reference/grain_reference2.csv')
     grain_reference['Aliases'].fillna('', inplace=True)
     # Hops
-    hop_reference = pd.read_csv('dash_apps/reference/hop_reference.csv')
+    hop_reference = pd.read_csv('/root/alegorithm_data/reference/hop_reference2.csv')
     hop_reference['Aliases'].fillna('', inplace=True)
     # Yeasts
-    yeast_reference = pd.read_csv('dash_apps/reference/yeast_reference.csv')
+    yeast_reference = pd.read_csv('/root/alegorithm_data/reference/yeast_reference.csv')
     yeast_reference['Aliases'].fillna('', inplace=True)
     yeast_reference['Name'].fillna('', inplace=True)
 
-    grain_reference_list = [x.strip('™').strip('®').rstrip().lower() for x in grain_reference['Name']]
-    grain_reference_list.append([x.strip('™').strip('®').rstrip().lower() for x in grain_reference['Aliases']])
-    hop_reference_list = [x.strip('™').strip('®').rstrip().lower() for x in hop_reference['Name']]
-    hop_reference_list.append([x.strip('™').strip('®').rstrip().lower() for x in hop_reference['Aliases']])
-    yeast_reference_list = [x.strip('™').strip('®').rstrip().lower() for x in yeast_reference['Name']]
-    yeast_reference_list.append([x.strip('™').strip('®').rstrip().lower() for x in yeast_reference['Aliases']])
+    grain_reference_list = [x.rstrip().lower() for x in grain_reference['Name']]
+    grain_reference_list.append([x.rstrip().lower() for x in grain_reference['Aliases']])
+    hop_reference_list = [x.rstrip().lower() for x in hop_reference['Name']]
+    hop_reference_list.append([x.rstrip().lower() for x in hop_reference['Aliases']])
+    yeast_reference_list = [x.rstrip().lower() for x in yeast_reference['Name']]
+    yeast_reference_list.append([x.rstrip().lower() for x in yeast_reference['Aliases']])
     return grain_reference_list, hop_reference_list, yeast_reference_list
 
 grain_reference_list, hop_reference_list, yeast_reference_list = reference_load()
 
 # Load in Raw Data, clean-up df, hold in memory
 # recipes = iu.load_all_recipes(json_file='recipes_with_matrices_full_8k.json')
-recipes = pd.read_json('dash_apps/recipes_for_viz.json')
+recipes = pd.DataFrame(json.load(open('/root/alegorithm_data/recipes_for_viz.json')))
 recipes.drop(['level_0'], axis=1, inplace=True)
 recipes.reset_index(inplace=True)
 
@@ -105,10 +106,10 @@ recipes = dcv.clean_brewers_friend(recipes)
 # Create controls
 beer_index_options = [{'label': str(i), 'value': i}
                   for i in range(recipes.index.max())]
-beer_type_options = [{'label': str(i), 'value': i}
+beer_type_options = [{'label': str(i.encode('ascii',errors='ignore')), 'value': i.encode('ascii',errors='ignore')}
                   for i in recipes.style_x.unique()]
-beer_author_options = [{'label': str(i), 'value': i}
-                  for i in recipes.author.unique()]
+beer_author_options = [{'label': str(i.encode('ascii',errors='ignore')), 'value': i.encode('ascii',errors='ignore')}
+                  for i in recipes.author.unique() if i is not None]
 
 
 # Layout
@@ -440,7 +441,7 @@ def fetch_recipe_and_temp(recipes, index, grain_reference_list, hop_reference_li
         return round(row,3)
 
     df['amount'] = df['amount'].apply(float).apply(round_float_3)
-    df['ingredients'] = df['ingredients'].apply(str)
+    df['ingredients'] = df['ingredients'].apply(lambda u: str(u.encode('ascii',errors='ignore')))
     df['time'] = df['variable'].apply(float)
     df['type'] = df['type'].apply(str)
 

@@ -36,7 +36,7 @@
                 <div class="hamburger-icon"></div>
             </button>
 
-            <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html#content5-f" aria-expanded="false">Overview</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#features1-6" aria-expanded="false" data-toggle="dropdown-submenu">Offerings</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box4-8">Beer Recommendations</a><a class="dropdown-item" href="index.html#msg-box4-b">Recipe Generator</a><a class="dropdown-item" href="index.html#msg-box4-c">Beer Explorer</a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">Methodology</a><div class="dropdown-menu"><a class="dropdown-item" href="details_recommendations.html">Recommendation System</a><a class="dropdown-item" href="details_recipes.html">Recipe Generation System</a><a class="dropdown-item" href="details_infrastructure.html">Infrastructure<br></a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">About</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box3-12">The Team</a><a class="dropdown-item" href="index.html#content5-1a">UC Berkeley MIDS Program<br></a></div></li><li class="nav-item nav-btn"><a class="nav-link btn btn-warning" href="login.html">Log In</a></li></ul>
+            <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html#content5-f" aria-expanded="false">Overview</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#features1-6" aria-expanded="false" data-toggle="dropdown-submenu">Offerings</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box4-8">Beer Recommendations</a><a class="dropdown-item" href="index.html#msg-box4-b">Recipe Generator</a><a class="dropdown-item" href="index.html#msg-box4-c">Beer Explorer</a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">Methodology</a><div class="dropdown-menu"><a class="dropdown-item" href="details_recommendations.html">Recommendation System</a><a class="dropdown-item" href="details_recipes.html">Recipe Generation System</a><a class="dropdown-item" href="details_architecture.html">Architecture<br></a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">About</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box3-12">The Team</a><a class="dropdown-item" href="index.html#content5-1a">UC Berkeley MIDS Program<br></a></div></li><li class="nav-item nav-btn"><a class="nav-link btn btn-warning" href="login.html">Log In</a></li></ul>
 
         </div>
 
@@ -144,7 +144,7 @@
     
     <div class="container">
         <h3 class="mbr-section-title display-2">Recommendation Model&nbsp;</h3>
-        <div class="lead">As this is an unsupervised machine learning task (there are no defined labels for each beer such as Recommend/Don't Recommend)we decided to utilize an unsupervised K-Nearest Neighbors model. The model was trained on the preprocessed data from above.</div>
+        <div class="lead">As this is an unsupervised machine learning task (there are no defined labels for each beer such as Recommend/Don't Recommend) we decided to utilize an unsupervised Nearest Neighbors model for the purposes of implementing neighbor searches. The model was trained on the preprocessed data from above.</div>
     </div>
 </section>
 
@@ -152,7 +152,7 @@
     
     <div class="container">
         <h3 class="mbr-section-title display-2">Model Validation&nbsp;</h3>
-        <div class="lead"><p>Because the success/failure/accuracy of unsupervised machine learning tasks cannot be directly measured we decided to use a visual representation to establish whether or not the model performed as expected. Our multi-hundred dimensional feature space could not be visualized as-is, so we used t-SNE dimensionality reduction to bring our feature space down to two dimensions for easy plotting. Below is the resulting visualization showing all 65,000 beers in a two dimensional space. Color encoding was by beer style, suggesting that the model is able to establish nearest neighbors that would inherently be considered as similar due to their similarity in beer style. Said another way: &nbsp;all of the beers with a style of 'IPA - American' are successfully grouped together, so that if you were to say you like a specific American IPA beer you would likely be recommended to try another American IPA beer with similar IBUs, ABV, rating, and description.&nbsp;</p></div>
+        <div class="lead"><p>Because the success/failure/accuracy of unsupervised machine learning tasks cannot be directly measured we decided to use a visual representation to establish whether or not the model performed as expected. Our multi-hundred dimensional feature space could not be visualized as-is, so we used t-SNE dimensionality reduction to bring our feature space down to two dimensions for easy plotting. Below is the resulting visualization showing all 65,000 beers in a two dimensional space. Color encoding was by beer style, suggesting that the model is able to accurately establish nearest neighbors that one would intuitively consider to be similar. Said another way:  all of the beers with a style of 'IPA - American' are successfully grouped together, so that if you were to say you like a specific American IPA beer you would likely be recommended to try another American IPA beer with similar IBUs, ABV, rating, and description.&nbsp;</p></div>
     </div>
 </section>
 
@@ -221,7 +221,7 @@
 <footer class="mbr-section mbr-section-nopadding mbr-footer" id="footer1-1m" data-rv-view="206" style="background-color: rgb(38, 39, 44); padding-top: 1rem; padding-bottom: 0rem;">
     
     <div class="container">
-        <p>Copyright (c) 2018 alegorithm.io&nbsp;<a href="https://mobirise.com/">Terms of Use</a>  | <a href="https://mobirise.com/">Privacy Policy</a></p>
+        <p>Copyright (c) 2018 alegorithm.io&nbsp;<a href="index.html">Terms of Use</a>  | <a href="index.html">Privacy Policy</a></p>
     </div>
 </footer>
 

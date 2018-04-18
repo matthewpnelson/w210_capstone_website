@@ -36,7 +36,7 @@
                 <div class="hamburger-icon"></div>
             </button>
 
-            <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html#content5-f" aria-expanded="false">Overview</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#features1-6" aria-expanded="false" data-toggle="dropdown-submenu">Offerings</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box4-8">Beer Recommendations</a><a class="dropdown-item" href="index.html#msg-box4-b">Recipe Generator</a><a class="dropdown-item" href="index.html#msg-box4-c">Beer Explorer</a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">Methodology</a><div class="dropdown-menu"><a class="dropdown-item" href="details_recommendations.html">Recommendation System</a><a class="dropdown-item" href="details_recipes.html">Recipe Generation System</a><a class="dropdown-item" href="details_infrastructure.html">Infrastructure<br></a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">About</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box3-12">The Team</a><a class="dropdown-item" href="index.html#content5-1a">UC Berkeley MIDS Program<br></a></div></li><li class="nav-item nav-btn"><a class="nav-link btn btn-warning" href="login.html">Log In</a></li></ul>
+            <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html#content5-f" aria-expanded="false">Overview</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#features1-6" aria-expanded="false" data-toggle="dropdown-submenu">Offerings</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box4-8">Beer Recommendations</a><a class="dropdown-item" href="index.html#msg-box4-b">Recipe Generator</a><a class="dropdown-item" href="index.html#msg-box4-c">Beer Explorer</a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">Methodology</a><div class="dropdown-menu"><a class="dropdown-item" href="details_recommendations.html">Recommendation System</a><a class="dropdown-item" href="details_recipes.html">Recipe Generation System</a><a class="dropdown-item" href="details_architecture.html">Architecture<br></a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="index.html#msg-box3-13" aria-expanded="false" data-toggle="dropdown-submenu">About</a><div class="dropdown-menu"><a class="dropdown-item" href="index.html#msg-box3-12">The Team</a><a class="dropdown-item" href="index.html#content5-1a">UC Berkeley MIDS Program<br></a></div></li><li class="nav-item nav-btn"><a class="nav-link btn btn-warning" href="login.html">Log In</a></li></ul>
 
         </div>
 
@@ -70,16 +70,20 @@
                 <h2 class="mbr-section-title display-3 text-xs-center">Sign Up</h2>
 
                 <div data-form-alert="true"><div hidden="" data-form-alert-success="true">Thanks for signing up!</div></div>
-                <form action="https://mobirise.com/" method="post" data-form-title="Sign Up">
-                    <input type="hidden" value="GP0MmT5rCz6/VPiARKUklcSJoinxn42n0GOvVPBqVQGkMg3R+rTFg2HJHEqiT9AaX5N5OWDZcXjQvMNVG50rosIzjA9WPjYRFQE38vrR+luT4Bx7S70JsdMGzFEypJLX" data-form-email="true">
+                <!-- <form action="https://mobirise.com/" method="post" data-form-title="Sign Up"> -->
+				<form class="mbr-form" action="/register" method="POST">
+                    <!-- <input type="hidden" value="GP0MmT5rCz6/VPiARKUklcSJoinxn42n0GOvVPBqVQGkMg3R+rTFg2HJHEqiT9AaX5N5OWDZcXjQvMNVG50rosIzjA9WPjYRFQE38vrR+luT4Bx7S70JsdMGzFEypJLX" data-form-email="true"> -->
                     <div class="form-group">
                         <input type="text" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" name="email" required="" placeholder="Username*" data-form-field="Email">
+                        <input type="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email">
+                    </div>
+					<div class="form-group">
+                        <input type="text" class="form-control" name="username" required="" placeholder="Username*" data-form-field="Username">
                     </div>
                     <div class="form-group">
-                        <input type="tel" class="form-control" name="phone" placeholder="Password*" data-form-field="Phone">
+                        <input type="password" class="form-control" name="password" placeholder="Password*" data-form-field="Password">
                     </div>
                     <!-- <div class="form-group">
                         <textarea class="form-control" name="message" rows="7" placeholder="Message" data-form-field="Message"></textarea>
@@ -130,12 +134,12 @@
 <footer class="mbr-section mbr-section-nopadding mbr-footer" id="footer1-35" data-rv-view="112" style="background-color: rgb(38, 39, 44); padding-top: 1rem; padding-bottom: 0rem;">
 
     <div class="container">
-        <p>Copyright (c) 2018 alegorithm.io&nbsp;<a href="https://mobirise.com/">Terms of Use</a>  | <a href="https://mobirise.com/">Privacy Policy</a></p>
+        <p>Copyright (c) 2018 alegorithm.io&nbsp;<a href="index.html">Terms of Use</a>  | <a href="index.html">Privacy Policy</a></p>
     </div>
 </footer>
 
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <!-- <script src="assets/web/assets/jquery/jquery.min.js"></script> -->
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/smooth-scroll/SmoothScroll.js"></script>

@@ -15,7 +15,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config.suppress_callback_exceptions = False
 
 
-import commercial_beer_viz_breweries, commercial_beer_recommender_custom, commercial_beer_recommender_rating_filter, commercial_beer_viz_styles #, recipe_viz
+import commercial_beer_viz_breweries, commercial_beer_recommender_custom, commercial_beer_recommender_rating_filter, commercial_beer_viz_styles, recipe_viz
 
 @app.route('/')
 @app.route('/<name>')
@@ -31,9 +31,9 @@ def recommendation_details(name=None):
 def recipe_details(name=None):
     return flask.render_template('details_recipes.html')
 
-@app.route('/details_infrastructure.html')
+@app.route('/details_architecture.html')
 def infrastructure_details(name=None):
-    return flask.render_template('details_infrastructure.html')
+    return flask.render_template('details_architecture.html')
 
 @app.route('/user_login', methods=['POST'])
 def do_admin_login():
@@ -51,10 +51,10 @@ def do_admin_login():
         session['logged_in_username'] = POST_USERNAME
         session['logged_in_name'] = result.name
         print 'logged in name is {}'.format(session.get('logged_in_name'))
-        return render_template('index.html', name=session['logged_in_name'])
+        return flask.render_template('index.html', name=session['logged_in_name'])
     else:
         flash('wrong password!')
-        return render_template('login.html')
+        return flask.render_template('login.html')
     	
 
 @app.route("/logout")
@@ -63,6 +63,34 @@ def logout():
     session['logged_in_as'] = None
     session['logged_in_name'] = None
     return home()
+	
+@app.route("/register", methods=['POST'])
+def register():
+    print 'register'	
+    POST_USERNAME = str(request.form['username'])
+    POST_PASSWORD = str(request.form['password'])
+    POST_NAME = str(request.form['name'])
+    POST_EMAIL = str(request.form['email'])
+	
+    Session = sessionmaker(bind=engine)
+    s = Session()
+    query = s.query(User)
+    query = s.query(User).filter(User.username.in_([POST_USERNAME]))
+    result = query.first()
+    if result:
+        print 'result is {}'.format(result.username)
+        flash('user exists!')
+        print '{} already exists'.format(POST_NAME)
+        return flask.render_template('signup.html')
+    else:
+        user = User(POST_USERNAME, POST_PASSWORD, POST_NAME, POST_EMAIL)
+        s.add(user)
+        s.commit()
+        session['logged_in'] = True
+        session['logged_in_as'] = POST_USERNAME
+        session['logged_in_name'] = POST_NAME
+        print '{} has been added to the database'.format(POST_NAME)
+        return flask.render_template('index.html', name=session.get('logged_in_name'))
 	
 @app.route('/assets/<path:path>')
 def send_assets(path):
@@ -90,7 +118,13 @@ def recommend2():
 
 @app.route('/recipes')
 def recipeviz():
-    return recipe_viz
+    print 'Recipes Viz'
+    if not session.get('logged_in'):
+        print 'Not logged in'
+        return flask.render_template('login.html')
+    else:
+        print 'Already logged in - displaying recipe viz'
+        return recipe_viz
 
 @app.route('/signup.html')
 def signup(name=None):
