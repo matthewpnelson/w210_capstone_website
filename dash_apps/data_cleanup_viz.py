@@ -9,8 +9,15 @@ import warnings
 
 def create_sparse_matrix(matrix, grain_reference_list, hop_reference_list, yeast_reference_list): #assumes dense_matrix has ingredients as columns and time on rows
 
-    current_matrix = matrix.transpose()
+    current_matrix_full = matrix.transpose()
+    current_matrix_no_type = current_matrix_full.copy()
     # Convert time column names to integers
+    try:
+        current_matrix = current_matrix_no_type.drop(['type'], axis=1)
+    except:
+        current_matrix = current_matrix_full
+
+#     original_columns =[col for col in current_matrix.columns]									   
     current_matrix.columns = [int(col) for col in current_matrix.columns]
     # Calculate the max Time for this recipe
     last_ingredient_add = max([int(mat) for mat in current_matrix]) + 1
@@ -28,24 +35,18 @@ def create_sparse_matrix(matrix, grain_reference_list, hop_reference_list, yeast
 
     # Add in the type of ingredient
     # Add all ingredients from dense matrix to sparse matrix
-
+	
+    def add_type(row):
+        try:
+            return row['type']
+        except:
+            return 'other'
+    padded_matrix['type'] = current_matrix_full.apply(add_type, axis=1)
+	
     for i, index in enumerate(current_matrix.index):
         for j, column in enumerate(current_matrix.columns):
             padded_matrix.loc[index,column] = current_matrix.loc[index,column]
-            try:
-                if str(index) in grain_reference_list:
-                    padded_matrix.loc[index, ['type']] = 'grain'
-                elif str(index) in hop_reference_list:
-                    padded_matrix.loc[index, 'type'] = 'hop'
-                elif str(index) in yeast_reference_list:
-                    padded_matrix.loc[index, 'type'] = 'yeast'
-                elif str(index) == 'Temperature':
-                    padded_matrix.loc[index, 'type'] = 'temperature'
-                else:
-                    padded_matrix.loc[index, 'type'] = 'other'
-            except:
-                continue
-
+            
     padded_matrix.index.name='ingredients'
     temperature_sparse = padded_matrix.loc[padded_matrix.index == 'Temperature', :]
 

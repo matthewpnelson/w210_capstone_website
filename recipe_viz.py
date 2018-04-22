@@ -101,6 +101,28 @@ recipes.drop(to_drop, axis=1, inplace=True)
 recipes = dcv.clean_brewers_friend(recipes)
 
 
+# match ingredients to types
+def clean(row):
+#     current_matrix = matrix.transpose()
+    for ingredient in row['matrix']:
+        try:
+            if str(ingredient).lower() in grain_reference_list:
+                row['matrix'][ingredient].update({'type':'grain'})
+            elif str(ingredient).lower() in hop_reference_list:
+                row['matrix'][ingredient].update({'type':'hop'})
+            elif str(ingredient).lower() in yeast_reference_list:
+                row['matrix'][ingredient].update({'type':'yeast'})
+            elif str(ingredient) == 'Temperature':
+                row['matrix'][ingredient].update({'type':'temperature'})
+            else:
+                row['matrix'][ingredient].update({'type':'other'})
+        except:
+            continue
+    return row
+
+recipes = recipes.apply(clean, axis=1)
+##########
+
 ############################################
 
 # Create controls
@@ -334,12 +356,12 @@ app.layout = html.Div(
                     className='twelve columns',
                     style={'text-align': 'center'}
                 ),
-                html.H4(
-                    '',
-                    id='beer_author_text',
-                    className='twelve columns',
-                    style={'text-align': 'center'}
-                ),
+                # html.H4(
+                #     '',
+                #     id='beer_author_text',
+                #     className='twelve columns',
+                #     style={'text-align': 'center'}
+                # ),
             ],
             className='row'
         ),
@@ -554,14 +576,14 @@ def update_beer_detail_text(button, beer_indices):
 def update_beer_name_text(button, beer_indices):
     beer_name, beer_type, abv, ibu, color, fg, og, author, beer_rating = fetch_beer_results(beer_indices)
     return "Name: %s" % (beer_name)
-
-# Selectors -> Beer Author Text
-@app.callback(Output('beer_author_text', 'children'),
-              [Input('button', 'n_clicks')],
-              [State('beer_indices', 'value')])
-def update_beer_author_text(button, beer_indices):
-    beer_name, beer_type, abv, ibu, color, fg, og, author, beer_rating = fetch_beer_results(beer_indices)
-    return "Author: %s" % (author)
+#
+# # Selectors -> Beer Author Text
+# @app.callback(Output('beer_author_text', 'children'),
+#               [Input('button', 'n_clicks')],
+#               [State('beer_indices', 'value')])
+# def update_beer_author_text(button, beer_indices):
+#     beer_name, beer_type, abv, ibu, color, fg, og, author, beer_rating = fetch_beer_results(beer_indices)
+# return "Author: %s" % (author)
 
 # Selectors -> Beer Type Text
 @app.callback(Output('beer_type_text', 'children'),

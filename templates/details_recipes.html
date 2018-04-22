@@ -44,7 +44,7 @@
 
 </section>
 
-<section class="mbr-section col-undefined mbr-after-navbar" id="content5-1c" data-rv-view="143" style="background-color: rgb(255, 255, 255); padding-top: 6rem; padding-bottom: 0rem;">
+<section class="mbr-section col-undefined mbr-after-navbar" id="content5-1g" data-rv-view="169" style="background-color: rgb(255, 255, 255); padding-top: 6rem; padding-bottom: 0rem;">
     
     <div class="container">
         <h3 class="mbr-section-title display-2">Technical Discussion | Recipe Generation</h3>
@@ -59,11 +59,24 @@
     </div>
 </section>
 
+<section class="mbr-section col-undefined mbr-after-navbar" id="content5-1c" data-rv-view="143" style="background-color: rgb(255, 255, 255); padding-top: 6rem; padding-bottom: 0rem;">
+    
+    <div class="container">
+        <h3 class="mbr-section-title display-2">Data</h3>
+        <div class="lead"><p>Our recipe database contains over 72,000 different recipes. These recipes are the backbone of the recipe generation models and are critical to accurately training, predicting, and generating new beers from scratch.&nbsp;</p></div>
+
+    </div>
+</section>
+
 <section class="mbr-section col-undefined" id="content5-w" data-rv-view="148" style="background-color: rgb(255, 255, 255); padding-top: 3rem; padding-bottom: 0rem;">
     
     <div class="container">
-        <h3 class="mbr-section-title display-2">Technical Discussion | Recipe Generation&nbsp;</h3>
-        <div class="lead"><p>Make your own website in a few clicks! Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. MobiRise Website Builder creates responsive, retina and mobile friendly websites in a few clicks. Mobirise is one of the easiest website development tools available today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.</p></div>
+        <h3 class="mbr-section-title display-2">Cleaning&nbsp;</h3>
+        <div class="lead">
+		<p>Although most of the recipes are in the BeerXML standard, there was a significant amount of cleaning that needed to take place in order to use them effectively. Standardization of units, time scales, and nomenclature was an incredible challenge to overcome.</p>
+		<p>Any brewer will tell you that timing is a critical component to the brewing process. That same brewer will also tell you that recipes list their time information in a way that is counter-intuitive for a novice or computer. While most ingredients are added in a time step relative to the start of the recipe, boil additions are measured from the end of the boil. These time steps all needed ot be standardized into a consistent timeline. You can view this standardized timeline in the Recipe Explorer. This timeline assumes instantaneous temperature changes, which is simply an abstraction for our models, as it is impossible to know how long an individual's stove takes to heat wort.</p>
+		<p>There is an infinite amount of ingredients that somebody could add into a beer. We decided to narrow it down to a reasonable set of the most commonly used ingredients and not worry too much about Ranch Dressing, rocks, and other unlikely additions. This required a significant amount of work to consolidate all of the possible ways somebody could say "Pale 2-row". Through an advanced aliasing and cleaning system, we managed to capture about 90% of the total ingredients our recipes saw. Unmatched ingredients were placed into bins so that they could still be modeled as unknowns/wildcards in their respective ingredient types. </p>
+		</div>
     </div>
 </section>
 
@@ -75,11 +88,11 @@
             <div class="col-xs-12 col-lg-3 mbr-inner-padding text-xs-center mbr-table-cell-lg">
                 
                 
-                <div class="lead">t-SNE Dimensionality Reduced Plot Showing the Groupings of Beers by Beer Style</div>
+                <div class="lead">A visual representation of two unique beer recipes.</div>
                 
             </div>
             <div class="col-xs-12 col-lg-9 mbr-table-cell-lg image-size" style="width: 50%;">
-                <div class="mbr-figure"><img src="assets/images/recommendation-model-1400x869.jpg"></div>
+                <div class="mbr-figure"><img src="assets/images/recipe_matrices-899x738.png"></div>
             </div>
         </div>
     </div>
@@ -88,55 +101,18 @@
 <section class="mbr-section col-undefined" id="content5-1d" data-rv-view="154" style="background-color: rgb(255, 255, 255); padding-top: 3rem; padding-bottom: 0rem;">
     
     <div class="container">
-        <h3 class="mbr-section-title display-2">Technical Discussion | Recipe Generation&nbsp;</h3>
-        <div class="lead"><p>Make your own website in a few clicks! Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. MobiRise Website Builder creates responsive, retina and mobile friendly websites in a few clicks. Mobirise is one of the easiest website development tools available today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.</p></div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section-small" id="features1-2e" data-rv-view="157" style="background-color: rgb(255, 255, 255); padding-top: 4.5rem; padding-bottom: 4.5rem;">
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="card cart-block">
-                    <div><img src="assets/images/log-ibu-481x357.png" class="card-img-top"></div>
-                    <div class="card-block">
-                        
-                        <p class="card-text">Distribution of IBU by beer following a log transformation.</p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="card cart-block">
-                    <div><img src="assets/images/log-abv-488x357.png" class="card-img-top"></div>
-                    <div class="card-block">
-                        
-                        <p class="card-text">Distribution of ABV by beer following a log transformation.</p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="card cart-block">
-                    <div><img src="assets/images/rating-distributions-481x357.png" class="card-img-top"></div>
-                    <div class="card-block">
-                        
-                        <p class="card-text">Beer Ratings followed a normal distribution, with a noticeable difference between Breweries who produced less than 10 beers (orange) and those who produced more (blue), suggesting that there may be a learning curve for new breweries before they produce more widely enjoyable beers.&nbsp;</p>
-                        
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+        <h3 class="mbr-section-title display-2">Scoring Model&nbsp;</h3>
+        <div class="lead">
+		<p>A recipe is a series of steps over time. Our data cleaning and reorganization put these steps into a consistent time-series format. It seemed only natural to select a Recurrent Neural Network as our model for this data. This performed well, but was ultimately rather slow and a little cumbersome. We later opted to use a simpler network architecture as it trained quicker and offered the same performance.</p>
+		</div>
     </div>
 </section>
 
 <section class="mbr-section col-undefined" id="content5-1e" data-rv-view="160" style="background-color: rgb(255, 255, 255); padding-top: 3rem; padding-bottom: 0rem;">
     
     <div class="container">
-        <h3 class="mbr-section-title display-2">Technical Discussion | Recipe Generation&nbsp;</h3>
-        <div class="lead"><p>Make your own website in a few clicks! Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. MobiRise Website Builder creates responsive, retina and mobile friendly websites in a few clicks. Mobirise is one of the easiest website development tools available today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.</p></div>
+        <h3 class="mbr-section-title display-2">Genetic Algorithm&nbsp;</h3>
+        <div class="lead"><p>Once the Scoring Model was built and tested, the quickest approach to generating new recipes was to simply throw things at the model and see what sticks. We could obviously do better than just randomly generating noise though. Instead, our Genetic Algorithm (GA) randomly selects a few existing recipes, spawns children recipes which are similar to their parents but have been modified slightly, and then allows the best recipes to continue to the next iteration. After many iterations, the great great great grandchild recipe may be very different from its ancestor but will score better against our model and tastebuds.</p></div>
     </div>
 </section>
 
@@ -161,7 +137,7 @@
 <footer class="mbr-section mbr-section-nopadding mbr-footer" id="footer1-t" data-rv-view="165" style="background-color: rgb(38, 39, 44); padding-top: 1rem; padding-bottom: 0rem;">
     
     <div class="container">
-        <p>Copyright (c) 2018 alegorithm.io&nbsp;<a href="https://mobirise.com/">Terms of Use</a>  | <a href="https://mobirise.com/">Privacy Policy</a></p>
+        <p>Copyright (c) 2018 alegorithm.io&nbsp;<a href="index.html">Terms of Use</a>  | <a href="index.html">Privacy Policy</a></p>
     </div>
 </footer>
 

@@ -62,8 +62,22 @@
 <section class="mbr-section col-undefined" id="content5-2i" data-rv-view="229" style="background-color: rgb(255, 255, 255); padding-top: 3rem; padding-bottom: 0rem;">
     
     <div class="container">
-        <h3 class="mbr-section-title display-2">Architecture</h3>
-        <div class="lead"><p>Few sentences regarding the physical infrastructure of the project. VM's, sqlite, Flask, gunicorn, etc.</p></div>
+        <h3 class="mbr-section-title display-2">Infrastructure</h3>
+        <div class="lead"><p>Alegorithm is running on an IBM Softlayer virtual machine. We had to make several adjustments to the VM configuration (both processing power and memory) to ensure it can handle the computations behind the visualizations. We chose Green Unicorn (Gunicorn) as our Python Web Server Gateway Interface (WSGI) server to run the Python web applications mainly to leverage its multi processing and multi threading capabilities. The website frontend is built using a combination of bootstrap and Flask and in the backend it is connected to a SQLite database. SQLAlchemy is used to construct Alegorithm's SQLite database.</p></div>
+    </div>
+</section>
+
+<section class="mbr-section mbr-section-nopadding" id="msg-box4-2a" data-rv-view="186" style="background-color: rgb(255, 255, 255); padding-top: 0rem; padding-bottom: 0rem;">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-xs-12 col-lg-9 mbr-table-cell-lg image-size" style="width: 50%;">
+                <div class="mbr-figure"><img src="assets/images/Infrastructure2.png"></div>
+				</br>
+				</br>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -75,11 +89,39 @@
     </div>
 </section>
 
+<section class="mbr-section mbr-section-nopadding" id="msg-box4-2a" data-rv-view="186" style="background-color: rgb(255, 255, 255); padding-top: 0rem; padding-bottom: 0rem;">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-xs-12 col-lg-9 mbr-table-cell-lg image-size" style="width: 50%;">
+                <div class="mbr-figure"><img src="assets/images/data-architecture.png"></div>
+				</br>
+				</br>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="mbr-section col-undefined" id="content5-2l" data-rv-view="238" style="background-color: rgb(255, 255, 255); padding-top: 0rem; padding-bottom: 0rem;">
     
     <div class="container">
         <h3 class="mbr-section-title display-2">Website&nbsp;</h3>
         <div class="lead"><p>HTML, CSS, and Javascript were used to create the website. All pictures used have been acquired under a full commercial use license.&nbsp;</p></div>
+    </div>
+</section>
+
+<section class="mbr-section mbr-section-nopadding" id="msg-box4-2d" data-rv-view="151" style="background-color: rgb(255, 255, 255); padding-top: 0rem; padding-bottom: 0rem;">
+<div class="container">
+        <div class="row">
+            
+            <div class="col-xs-12 col-lg-8 mbr-inner-padding text-xs-left mbr-table-cell-lg">
+				<div class="mbr-figure"><img src="assets/images/js.png"></div>
+            </div>
+            <div class="col-xs-12 col-lg-4 mbr-table-cell-lg image-size" style="width: 50%;">
+                <div class="mbr-figure"><img src="assets/images/dash-logo-300.png"></div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -90,6 +132,8 @@
         <div class="lead"><p><a href="https://plot.ly/products/dash/">Dash</a> by Plot.ly was leveraged for all interactive visualizations on this website, including the <a href="/recommend_beer">Beer Recommender by Beer</a>, <a href="/recommend_custom">Custom Beer Recommender</a>, <a href="/explorer_styles">Beer Explorer by Style</a>, <a href="/explorer_brewery">Beer Explorer by Brewery</a>, and the <a href="/recipes">Recipe Visualization</a> tool. Dash was chosen largely due to its ability to build a highly functional interactive visualization with minimal lines of Python code ( &lt; 5000 lines total) while rendering the resulting visualization in a web browser as .html, .css, and .js. In addition Dash proved to be very useful from a server management perspective, as it is a<span style="font-size: 1.25rem;">ble to integrate with a single Flask server instance. In general, these visualizations handle all of our on-the-fly calculations during user interaction and can do so without re-loading the page upon each dropdown or selection adjustment.&nbsp;</span></p></div>
     </div>
 </section>
+
+
 
 <section class="mbr-section mbr-section-small mbr-footer" id="contacts1-2s" data-rv-view="259" style="background-color: rgb(255, 255, 255); padding-top: 6rem; padding-bottom: 1.5rem;">
     

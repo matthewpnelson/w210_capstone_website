@@ -151,10 +151,46 @@ country_options = [{'label': str(i), 'value': i}
                   for i in beers['country'].unique()]
 
 # Input from a User Profile (test)
-test_beers = ['New Glarus Brewing Company Spotted Cow','Nano 108 Brewing Company Cascadian Dark Ale (Black Rye IPA)',
-'Nano 108 Brewing Company Raspberry And Rose Rice Lager', 'Nano 108 Brewing Company Whiskey Barrel Aged British Burton Ale',
-'Nano 108 Brewing Company Woodford Reserve Bourbon Barrel Aged German Doppelbock']
-test_ratings = [3.89, 3.77, 3.89, 4.12, 4.34]
+test_beers = ['Speakeasy Ales & Lagers Blind Tiger Imperial IPA',
+ '18th Street Brewery The Fox And the Goat',
+ "B.O.B.'s Brewery Hoptics",
+ '3 Floyds Brewing Company Yum Yum',
+ 'Commonhouse Aleworks Broad Path Brown',
+ 'The Kernel Brewery India Pale Ale Double Black',
+ '3 Sheeps Brewing Company Bourbon Barrel Aged Paid Time Off',
+ 'Spearfish Brewing Elephant Man',
+ 'East Nashville Beer Works East Bank Citra IPA',
+ 'Cahaba Brewing Company English Oat Brown',
+ 'Tampa Beer Works Saint Bosco IPA',
+ 'Casa Agria Specialty Ales Pinky Sour',
+ "Samuel Smith's Old Brewery India Ale",
+ 'Mad Squirrel Brewing Company London Porter',
+ 'The Alchemist Focal Banger',
+ 'O-Twn Brewing Das Panzer',
+ 'Ocean Lab Brewing Co. Hurricaned Harvest Ale 2017',
+ "The Brewer's Art Resurrection",
+ 'Mad Frog Brewery Orange Dub Witbier',
+ 'Bad Habit Brewing Company Rather Ripped Series: Blood Orange Milkshake IPA']
+test_ratings = [3.9100000000000001,
+ 3.8200000000000003,
+ 3.71,
+ 3.8100000000000001,
+ 3.6499999999999999,
+ 4.5099999999999998,
+ 4.3499999999999996,
+ 3.5,
+ 3.6899999999999999,
+ 4.3499999999999996,
+ 3.9100000000000001,
+ 4.0599999999999996,
+ 3.4300000000000002,
+ 3.71,
+ 4.4900000000000002,
+ 4.3099999999999996,
+ 4.0800000000000001,
+ 3.71,
+ 3.7599999999999998,
+ 4.0899999999999999]
 user_profile_beer_list = dict(beer=test_beers, rating=test_ratings)
 
 # Layout
@@ -748,12 +784,13 @@ def grab_similar_beers(df, index, neighbs = 500):
 
     return beers.loc[out, :]
 
+
 def generate_name_text(beer_indices, rating_threshold, location_filter_results, city_dropdown, state_dropdown, country_dropdown, beer_number):
     try:
         beers_dff = grab_similar_beers(beers, beer_indices)
         beers_dff = beers_dff[beers_dff['rating'] > rating_threshold]
         beers_dff = filter_dataframe(beers_dff, location_filter_results, city_dropdown, state_dropdown, country_dropdown)
-        beers_dff.sort_values(by='rating', ascending=False, inplace=True)
+        # beers_dff.sort_values(by='rating', ascending=False, inplace=True)
         return beers_dff.iloc[beer_number]['name']
     except:
         return ''
@@ -763,7 +800,7 @@ def generate_brewery_text(beer_indices, rating_threshold, location_filter_result
         beers_dff = grab_similar_beers(beers, beer_indices)
         beers_dff = beers_dff[beers_dff['rating'] > rating_threshold]
         beers_dff = filter_dataframe(beers_dff, location_filter_results, city_dropdown, state_dropdown, country_dropdown)
-        beers_dff.sort_values(by='rating', ascending=False, inplace=True)
+        # beers_dff.sort_values(by='rating', ascending=False, inplace=True)
         return "Brewery: "+beers_dff.iloc[beer_number]['brewery']
     except:
         return ''
@@ -773,7 +810,7 @@ def generate_rating_text(beer_indices, rating_threshold, location_filter_results
         beers_dff = grab_similar_beers(beers, beer_indices)
         beers_dff = beers_dff[beers_dff['rating'] > rating_threshold]
         beers_dff = filter_dataframe(beers_dff, location_filter_results, city_dropdown, state_dropdown, country_dropdown)
-        beers_dff.sort_values(by='rating', ascending=False, inplace=True)
+        # beers_dff.sort_values(by='rating', ascending=False, inplace=True)
         return "Rating: %0.1f" % (beers_dff.iloc[beer_number]['rating'])
     except:
         return ''
@@ -783,7 +820,7 @@ def generate_abv_text(beer_indices, rating_threshold, location_filter_results, c
         beers_dff = grab_similar_beers(beers, beer_indices)
         beers_dff = beers_dff[beers_dff['rating'] > rating_threshold]
         beers_dff = filter_dataframe(beers_dff, location_filter_results, city_dropdown, state_dropdown, country_dropdown)
-        beers_dff.sort_values(by='rating', ascending=False, inplace=True)
+        # beers_dff.sort_values(by='rating', ascending=False, inplace=True)
         return "ABV: %0.1f" % (beers_dff.iloc[beer_number]['abv']*100)
     except:
         return ''
@@ -793,7 +830,7 @@ def generate_ibu_text(beer_indices, rating_threshold, location_filter_results, c
         beers_dff = grab_similar_beers(beers, beer_indices)
         beers_dff = beers_dff[beers_dff['rating'] > rating_threshold]
         beers_dff = filter_dataframe(beers_dff, location_filter_results, city_dropdown, state_dropdown, country_dropdown)
-        beers_dff.sort_values(by='rating', ascending=False, inplace=True)
+        # beers_dff.sort_values(by='rating', ascending=False, inplace=True)
         return "IBU: %0.1f" % (beers_dff.iloc[beer_number]['ibu'])
     except:
         return ''
@@ -803,7 +840,7 @@ def generate_description_text(beer_indices, rating_threshold, location_filter_re
         beers_dff = grab_similar_beers(beers, beer_indices)
         beers_dff = beers_dff[beers_dff['rating'] > rating_threshold]
         beers_dff = filter_dataframe(beers_dff, location_filter_results, city_dropdown, state_dropdown, country_dropdown)
-        beers_dff.sort_values(by='rating', ascending=False, inplace=True)
+        # beers_dff.sort_values(by='rating', ascending=False, inplace=True)
         return "Description: "+beers_dff.iloc[beer_number]['description']
     except:
         return ''
